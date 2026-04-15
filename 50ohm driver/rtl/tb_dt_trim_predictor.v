@@ -30,14 +30,8 @@ module tb_dt_trim_predictor;
   wire [7:0]  pvtn_out;
   wire        done;
 
-  // Configuration (unused in test, but connected)
-  reg         cfg_wr_en;
-  reg         cfg_tree_sel;
-  reg  [9:0]  cfg_wr_addr;
-  reg  [59:0] cfg_wr_data;
-
   // ----------------------------------------------------------------
-  // DUT instantiation
+  // DUT instantiation (no cfg ports)
   // ----------------------------------------------------------------
   dt_trim_predictor #(
                       .PVTP_NODES (789),
@@ -55,11 +49,7 @@ module tb_dt_trim_predictor;
                       .start        (start),
                       .pvtp_out     (pvtp_out),
                       .pvtn_out     (pvtn_out),
-                      .done         (done),
-                      .cfg_wr_en    (cfg_wr_en),
-                      .cfg_tree_sel (cfg_tree_sel),
-                      .cfg_wr_addr  (cfg_wr_addr),
-                      .cfg_wr_data  (cfg_wr_data)
+                      .done         (done)
                     );
 
   // ----------------------------------------------------------------
@@ -118,10 +108,6 @@ module tb_dt_trim_predictor;
     pmon_in      = 0;
     vreg_in      = 0;
     temp_in      = 0;
-    cfg_wr_en    = 0;
-    cfg_tree_sel = 0;
-    cfg_wr_addr  = 0;
-    cfg_wr_data  = 0;
     pass_pvtp    = 0;
     fail_pvtp    = 0;
     pass_pvtn    = 0;

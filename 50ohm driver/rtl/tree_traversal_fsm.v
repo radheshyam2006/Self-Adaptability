@@ -29,12 +29,7 @@ module tree_traversal_fsm #(
     input  wire [4:0]              vreg_in,
     input  wire [9:0]              temp_in,
     output reg  [7:0]              trim_out,
-    output reg                     done,
-
-    // SRAM configuration port (for reprogramming)
-    input  wire                    cfg_wr_en,
-    input  wire [ADDR_WIDTH-1:0]   cfg_wr_addr,
-    input  wire [59:0]             cfg_wr_data
+    output reg                     done
   );
 
   // ----------------------------------------------------------------
@@ -66,13 +61,6 @@ module tree_traversal_fsm #(
   always @(posedge clk)
   begin
     node_data <= sram[node_addr];
-  end
-
-  // Synchronous write (configuration port)
-  always @(posedge clk)
-  begin
-    if (cfg_wr_en)
-      sram[cfg_wr_addr] <= cfg_wr_data;
   end
 
   // ----------------------------------------------------------------
