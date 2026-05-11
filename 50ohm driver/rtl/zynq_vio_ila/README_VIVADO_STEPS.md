@@ -70,13 +70,20 @@ rtl/
 
 1. Open **Vivado 2022.2** (or any 2020+)
 2. Click **Tcl Console** tab at the bottom
-3. Type this command (update the path to match yours):
+3. First, open `create_project.tcl` and update:
+   - `set root_dir {...}` to your local `50ohm driver` folder path
+
+4. Then type this command in Tcl Console (update the path to match yours):
 
 ```tcl
-source {C:/Users/radhe/OneDrive/Documents/AI_Self-adaptive_Chip/Self Adaptability/50ohm driver/rtl/zynq_vio_ila/create_project.tcl}
+source {C:/path/to/Self-Adaptability/50ohm driver/rtl/zynq_vio_ila/create_project.tcl}
 ```
 
-4. The script will:
+   Example for this repo layout:
+   - Linux: `/home/runner/work/Self-Adaptability/Self-Adaptability/50ohm driver/rtl/zynq_vio_ila/create_project.tcl`
+   - Windows: `C:/.../Self-Adaptability/50ohm driver/rtl/zynq_vio_ila/create_project.tcl`
+
+5. The script will:
    - Create a project targeting **xc7z020clg484-1** (ZedBoard's exact chip)
    - Add `top_zedboard.v`, `dt_trim_predictor.v`, `tree_traversal_fsm.v`
    - Add `pvtp_tree.hex` and `pvtn_tree.hex` as memory init files
