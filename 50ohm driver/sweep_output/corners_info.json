@@ -1,0 +1,72 @@
+[
+  {
+    "name": "tt_vdd_temp_0",
+    "corner": "tt",
+    "vreg": 0.81,
+    "temperature": -40.0,
+    "pull_up_res": -49.622129,
+    "pull_dn_res": 49.531058,
+    "pmon_cmos_res": 248568380.0,
+    "pmon_cmos": 296807840.0,
+    "pvtp_raw": "0001-1111",
+    "pvtn_raw": "0001-1111",
+    "pull_up_res_new": 49.33,
+    "pull_dn_res_new": -49.62
+  },
+  {
+    "name": "tt_vdd_temp_1",
+    "corner": "tt",
+    "vreg": 0.81,
+    "temperature": -39.5,
+    "pull_up_res": -49.635785,
+    "pull_dn_res": 49.544189,
+    "pmon_cmos_res": 248491330.0,
+    "pmon_cmos": 296707840.0,
+    "pvtp_raw": "0001-1111",
+    "pvtn_raw": "0001-1111",
+    "pull_up_res_new": 49.34,
+    "pull_dn_res_new": -49.64
+  },
+  {
+    "name": "tt_vdd_temp_2662",
+    "corner": "tt",
+    "vreg": 0.97,
+    "temperature": -29.0,
+    "pull_up_res": -48.028266,
+    "pull_dn_res": 48.289339,
+    "pmon_cmos_res": 369419010.0,
+    "pmon_cmos": 450056460.0,
+    "pvtp_raw": "1-1101",
+    "pvtn_raw": "1-1110",
+    "pull_up_res_new": -50.58,
+    "pull_dn_res_new": 49.34
+  },
+  {
+    "name": "tt_vdd_temp_10",
+    "corner": "tt",
+    "vreg": 0.81,
+    "temperature": -35.0,
+    "pull_up_res": -49.758893,
+    "pull_dn_res": 49.662062,
+    "pmon_cmos_res": 247770450.0,
+    "pmon_cmos": 295726150.0,
+    "pvtp_raw": "0001-1111",
+    "pvtn_raw": "0001-1111",
+    "pull_up_res_new": 49.46,
+    "pull_dn_res_new": -49.76
+  },
+  {
+    "name": "tt_vdd_temp_3295",
+    "corner": "tt",
+    "vreg": 0.99,
+    "temperature": 123.0,
+    "pull_up_res": -52.353791,
+    "pull_dn_res": 51.646073,
+    "pmon_cmos_res": 326279260.0,
+    "pmon_cmos": 392076920.0,
+    "pvtp_raw": "0011-1101",
+    "pvtn_raw": "0011-1100",
+    "pull_up_res_new": -49.85,
+    "pull_dn_res_new": 50.32
+  }
+]

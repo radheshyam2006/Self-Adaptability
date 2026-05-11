@@ -26,8 +26,8 @@ module tb_dt_trim_predictor;
   reg  [4:0]  vreg_in;
   reg  [9:0]  temp_in;
   reg         start;
-  wire [7:0]  pvtp_out;
-  wire [7:0]  pvtn_out;
+  wire [13:0] pvtp_out;
+  wire [13:0] pvtn_out;
   wire        done;
 
   // ----------------------------------------------------------------

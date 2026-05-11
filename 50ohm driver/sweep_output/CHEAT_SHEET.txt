@@ -1,0 +1,149 @@
+======================================================================
+  PVT CORNER SWEEP - CHEAT SHEET
+  For each corner: SCP file -> Set vreg in CIW -> Run in Maestro
+======================================================================
+
+--- Corner 1/5: tt_vdd_temp_0 ---
+  vreg = 0.81V (encoded: 1)
+  temp = -40.0C (encoded: 0)
+  pmon = 248568380.0 (encoded: 248568380)
+  Expected pvtp: 0001-1111
+  Expected pvtn: 0001-1111
+  Excel pull_up_res_new: 49.33
+  Excel pull_dn_res_new: -49.62
+
+  Step 1 (Windows PowerShell):
+    scp "sweep_output\dummy_sensors_1.v" user13@10.2.20.16:/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/rtl_import/dummy_sensors.v
+
+  Step 2 (Cadence CIW — type at the bottom command line):
+    desVar("vreg" 0.81)
+
+  Step 3 (Maestro):
+    Click: Simulation -> Netlist -> Recreate
+    Click: Green Run button
+
+  Step 4 (Record results):
+    pup_main   = _____ ohm
+    pdown_main = _____ ohm
+    pup_1090   = _____ ohm   (if available)
+    pdown_1090 = _____ ohm   (if available)
+    pup_3070   = _____ ohm   (if available)
+    pdown_3070 = _____ ohm   (if available)
+
+======================================================================
+
+--- Corner 2/5: tt_vdd_temp_1 ---
+  vreg = 0.81V (encoded: 1)
+  temp = -39.5C (encoded: 2)
+  pmon = 248491330.0 (encoded: 248491330)
+  Expected pvtp: 0001-1111
+  Expected pvtn: 0001-1111
+  Excel pull_up_res_new: 49.34
+  Excel pull_dn_res_new: -49.64
+
+  Step 1 (Windows PowerShell):
+    scp "sweep_output\dummy_sensors_2.v" user13@10.2.20.16:/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/rtl_import/dummy_sensors.v
+
+  Step 2 (Cadence CIW — type at the bottom command line):
+    desVar("vreg" 0.81)
+
+  Step 3 (Maestro):
+    Click: Simulation -> Netlist -> Recreate
+    Click: Green Run button
+
+  Step 4 (Record results):
+    pup_main   = _____ ohm
+    pdown_main = _____ ohm
+    pup_1090   = _____ ohm   (if available)
+    pdown_1090 = _____ ohm   (if available)
+    pup_3070   = _____ ohm   (if available)
+    pdown_3070 = _____ ohm   (if available)
+
+======================================================================
+
+--- Corner 3/5: tt_vdd_temp_2662 ---
+  vreg = 0.97V (encoded: 17)
+  temp = -29.0C (encoded: 44)
+  pmon = 369419010.0 (encoded: 369419010)
+  Expected pvtp: 1-1101
+  Expected pvtn: 1-1110
+  Excel pull_up_res_new: -50.58
+  Excel pull_dn_res_new: 49.34
+
+  Step 1 (Windows PowerShell):
+    scp "sweep_output\dummy_sensors_3.v" user13@10.2.20.16:/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/rtl_import/dummy_sensors.v
+
+  Step 2 (Cadence CIW — type at the bottom command line):
+    desVar("vreg" 0.97)
+
+  Step 3 (Maestro):
+    Click: Simulation -> Netlist -> Recreate
+    Click: Green Run button
+
+  Step 4 (Record results):
+    pup_main   = _____ ohm
+    pdown_main = _____ ohm
+    pup_1090   = _____ ohm   (if available)
+    pdown_1090 = _____ ohm   (if available)
+    pup_3070   = _____ ohm   (if available)
+    pdown_3070 = _____ ohm   (if available)
+
+======================================================================
+
+--- Corner 4/5: tt_vdd_temp_10 ---
+  vreg = 0.81V (encoded: 1)
+  temp = -35.0C (encoded: 20)
+  pmon = 247770450.0 (encoded: 247770450)
+  Expected pvtp: 0001-1111
+  Expected pvtn: 0001-1111
+  Excel pull_up_res_new: 49.46
+  Excel pull_dn_res_new: -49.76
+
+  Step 1 (Windows PowerShell):
+    scp "sweep_output\dummy_sensors_4.v" user13@10.2.20.16:/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/rtl_import/dummy_sensors.v
+
+  Step 2 (Cadence CIW — type at the bottom command line):
+    desVar("vreg" 0.81)
+
+  Step 3 (Maestro):
+    Click: Simulation -> Netlist -> Recreate
+    Click: Green Run button
+
+  Step 4 (Record results):
+    pup_main   = _____ ohm
+    pdown_main = _____ ohm
+    pup_1090   = _____ ohm   (if available)
+    pdown_1090 = _____ ohm   (if available)
+    pup_3070   = _____ ohm   (if available)
+    pdown_3070 = _____ ohm   (if available)
+
+======================================================================
+
+--- Corner 5/5: tt_vdd_temp_3295 ---
+  vreg = 0.99V (encoded: 19)
+  temp = 123.0C (encoded: 652)
+  pmon = 326279260.0 (encoded: 326279260)
+  Expected pvtp: 0011-1101
+  Expected pvtn: 0011-1100
+  Excel pull_up_res_new: -49.85
+  Excel pull_dn_res_new: 50.32
+
+  Step 1 (Windows PowerShell):
+    scp "sweep_output\dummy_sensors_5.v" user13@10.2.20.16:/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/rtl_import/dummy_sensors.v
+
+  Step 2 (Cadence CIW — type at the bottom command line):
+    desVar("vreg" 0.99)
+
+  Step 3 (Maestro):
+    Click: Simulation -> Netlist -> Recreate
+    Click: Green Run button
+
+  Step 4 (Record results):
+    pup_main   = _____ ohm
+    pdown_main = _____ ohm
+    pup_1090   = _____ ohm   (if available)
+    pdown_1090 = _____ ohm   (if available)
+    pup_3070   = _____ ohm   (if available)
+    pdown_3070 = _____ ohm   (if available)
+
+======================================================================
