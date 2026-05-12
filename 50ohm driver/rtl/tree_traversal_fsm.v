@@ -42,9 +42,10 @@ module tree_traversal_fsm #(
   reg [1:0] state;
 
   // ----------------------------------------------------------------
-  // SRAM array
+  // SRAM array — force BRAM inference so Vivado uses Block RAM tiles
+  // instead of distributing 789×60 bits across LUT RAM.
   // ----------------------------------------------------------------
-  reg [59:0] sram [0:NODE_COUNT-1];
+  (* ram_style = "block" *) reg [59:0] sram [0:NODE_COUNT-1];
 
   // Initialize from hex file if provided
   initial

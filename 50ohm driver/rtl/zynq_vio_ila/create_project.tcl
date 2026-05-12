@@ -9,7 +9,7 @@
 ## =============================================================================
 
 ## ---- EDIT THIS PATH to match where your files are ----
-set root_dir {C:/Users/radhe/OneDrive/Documents/AI_Self-adaptive_Chip/Self Adaptability/50ohm driver}
+set root_dir {C:/Users/dell/FPGA_Implementation/50-ohm-driver-fpga/Self-Adaptability/50ohm driver}
 set rtl_dir  "$root_dir/rtl"
 set zynq_dir "$rtl_dir/zynq_vio_ila"
 

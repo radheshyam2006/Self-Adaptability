@@ -13,8 +13,8 @@ module dt_trim_predictor #(
     parameter PVTN_NODES  = 653,
     parameter ADDR_WIDTH  = 10,
     parameter TREE_DEPTH  = 14,
-    parameter PVTP_INIT   = "/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/rtl_import/pvtp_tree.hex",
-    parameter PVTN_INIT   = "/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/rtl_import/pvtn_tree.hex"
+    parameter PVTP_INIT   = "pvtp_tree.hex",
+    parameter PVTN_INIT   = "pvtn_tree.hex"
   )(
     input  wire        clk,
     input  wire        rst_n,

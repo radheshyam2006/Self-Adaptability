@@ -1,0 +1,640 @@
+
+*** Running vivado
+    with args -log top_zedboard.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_zedboard.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon May 11 18:10:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_zedboard.tcl -notrace
+Command: synth_design -top top_zedboard -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 61948
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1339.301 ; gain = 541.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:310]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:312]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:345]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:347]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:415]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:450]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:452]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:485]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:487]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:277]
+INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'top_zedboard' [C:/fpga/dt_pred/rtl/zynq_vio_ila/top_zedboard.v:16]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82819]
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82819]
+INFO: [Synth 8-6157] synthesizing module 'BUFR' [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3017]
+	Parameter BUFR_DIVIDE bound to: 2 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFR' (0#1) [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3017]
+INFO: [Synth 8-6157] synthesizing module 'dt_trim_predictor' [C:/fpga/dt_pred/rtl/dt_trim_predictor.v:11]
+	Parameter PVTP_NODES bound to: 789 - type: integer 
+	Parameter PVTN_NODES bound to: 653 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter TREE_DEPTH bound to: 14 - type: integer 
+	Parameter PVTP_INIT bound to: pvtp_tree.hex - type: string 
+	Parameter PVTN_INIT bound to: pvtn_tree.hex - type: string 
+INFO: [Synth 8-6157] synthesizing module 'tree_traversal_fsm' [C:/fpga/dt_pred/rtl/tree_traversal_fsm.v:17]
+	Parameter NODE_COUNT bound to: 789 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter TREE_DEPTH bound to: 14 - type: integer 
+	Parameter INIT_FILE bound to: pvtp_tree.hex - type: string 
+INFO: [Synth 8-3876] $readmem data file 'pvtp_tree.hex' is read successfully [C:/fpga/dt_pred/rtl/tree_traversal_fsm.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'tree_traversal_fsm' (0#1) [C:/fpga/dt_pred/rtl/tree_traversal_fsm.v:17]
+INFO: [Synth 8-6157] synthesizing module 'tree_traversal_fsm__parameterized0' [C:/fpga/dt_pred/rtl/tree_traversal_fsm.v:17]
+	Parameter NODE_COUNT bound to: 653 - type: integer 
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter TREE_DEPTH bound to: 14 - type: integer 
+	Parameter INIT_FILE bound to: pvtn_tree.hex - type: string 
+INFO: [Synth 8-3876] $readmem data file 'pvtn_tree.hex' is read successfully [C:/fpga/dt_pred/rtl/tree_traversal_fsm.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'tree_traversal_fsm__parameterized0' (0#1) [C:/fpga/dt_pred/rtl/tree_traversal_fsm.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'dt_trim_predictor' (0#1) [C:/fpga/dt_pred/rtl/dt_trim_predictor.v:11]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/vio_0_1/synth/vio_0.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (0#1) [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/vio_0_1/synth/vio_0.v:49]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/fpga/dt_pred/rtl/zynq_vio_ila/top_zedboard.v:164]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/synth/ila_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3131]
+INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3131]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3094]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3094]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165484]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165484]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165334]
+INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165423]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165423]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [E:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
+INFO: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3223]
+INFO: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3223]
+INFO: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3223]
+INFO: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3223]
+INFO: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3223]
+INFO: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3223]
+INFO: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_19_ila' has 1033 connections declared, but only 1027 given [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/synth/ila_0.v:3223]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/synth/ila_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'top_zedboard' (0#1) [C:/fpga/dt_pred/rtl/zynq_vio_ila/top_zedboard.v:16]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity vio_0 does not have driver. [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/vio_0_1/synth/vio_0.v:80]
+INFO: [Synth 8-3848] Net sl_iport0 in module/entity ila_0 does not have driver. [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/synth/ila_0.v:112]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_vio'. This will prevent further optimization [C:/fpga/dt_pred/rtl/zynq_vio_ila/top_zedboard.v:139]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila'. This will prevent further optimization [C:/fpga/dt_pred/rtl/zynq_vio_ila/top_zedboard.v:164]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_dt_predictor'. This will prevent further optimization [C:/fpga/dt_pred/rtl/zynq_vio_ila/top_zedboard.v:107]
+WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[232] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[231] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[230] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[229] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[228] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[227] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[226] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[225] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[224] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[223] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[222] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[221] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[220] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[219] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[218] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[217] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[216] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[215] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[214] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[213] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[212] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[211] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[210] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[209] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[208] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[207] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[206] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[205] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[204] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[203] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[202] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[201] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[200] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[199] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[198] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[197] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[196] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[195] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[194] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[193] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[192] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[191] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[190] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[189] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[188] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[187] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[186] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[185] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[184] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[183] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[182] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[181] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[180] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[179] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[178] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[177] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[176] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[175] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[174] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[173] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[172] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[171] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[170] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[169] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[168] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[167] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[166] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[165] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[164] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[163] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[162] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[161] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[160] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[159] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[158] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[157] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[156] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[155] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[154] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[153] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[152] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[151] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[150] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[149] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[148] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[147] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[146] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[145] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[144] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[143] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[142] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[141] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[140] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[139] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[138] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[137] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[136] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[135] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[134] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.138 . Memory (MB): peak = 1914.883 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 228 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'u_ila/inst'
+Finished Parsing XDC File [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'u_ila/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_zedboard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_zedboard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/vio_0_1/vio_0.xdc] for cell 'u_vio'
+Finished Parsing XDC File [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/vio_0_1/vio_0.xdc] for cell 'u_vio'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.gen/sources_1/ip/vio_0_1/vio_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_zedboard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_zedboard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/fpga/dt_pred/rtl/zynq_vio_ila/zedboard.xdc]
+Finished Parsing XDC File [C:/fpga/dt_pred/rtl/zynq_vio_ila/zedboard.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/fpga/dt_pred/rtl/zynq_vio_ila/zedboard.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_zedboard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_zedboard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_zedboard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_zedboard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1914.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 168 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 156 instances
+  CFGLUT5 => SRLC32E: 12 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 1914.883 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tree_traversal_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tree_traversal_fsm__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized4'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized5'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized6'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized7'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized8'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_3_generic_memrd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                 S_FETCH |                               01 |                               01
+               S_COMPARE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'tree_traversal_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                 S_FETCH |                               01 |                               01
+               S_COMPARE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'tree_traversal_fsm__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              RESET_ADDR |                          0000001 |                          0000001
+            REQUEST_READ |                          0000010 |                          0000010
+           WAIT_READ_ACK |                          0000100 |                          0000100
+             OUTPUT_DATA |                          0001000 |                          0001000
+                    IDLE |                          0010000 |                          0010000
+         INCREMENT_BLOCK |                          0100000 |                          0100000
+       INCREMENT_ADDRESS |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'ltlib_v1_0_3_generic_memrd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_dt_predictor/u_pvtp_tree/node_data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dt_predictor/u_pvtp_tree/node_data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dt_predictor/u_pvtn_tree/node_data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_dt_predictor/u_pvtn_tree/node_data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1914.883 ; gain = 1117.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 2023.883 ; gain = 1226.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 2023.883 ; gain = 1226.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 2023.883 ; gain = 1226.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 2023.883 ; gain = 1226.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 2023.883 ; gain = 1226.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 2023.883 ; gain = 1226.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFR     |     1|
+|2     |CARRY4   |    59|
+|3     |CFGLUT5  |   168|
+|4     |LUT1     |    52|
+|5     |LUT2     |   311|
+|6     |LUT3     |   169|
+|7     |LUT4     |   365|
+|8     |LUT5     |   143|
+|9     |LUT6     |   596|
+|10    |MUXF7    |    21|
+|11    |RAMB18E1 |     1|
+|12    |RAMB36E1 |    10|
+|17    |SRL16E   |   237|
+|18    |SRLC16E  |     2|
+|19    |SRLC32E  |    17|
+|20    |FDCE     |   142|
+|21    |FDRE     |  2853|
+|22    |FDSE     |    10|
+|23    |IBUFDS   |     1|
+|24    |OBUF     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 2023.883 ; gain = 1226.484
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3552 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:48 . Memory (MB): peak = 2023.883 ; gain = 1226.484
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 2023.883 ; gain = 1226.484
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 2023.883 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 261 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: u_ila UUID: c30a8330-47ba-5203-8dbc-7e3e3214d902 
+INFO: [Chipscope 16-324] Core: u_vio UUID: 407d14e8-1cc9-58ef-8c2e-354d7bf170fd 
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2036.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 168 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 156 instances
+  CFGLUT5 => SRLC32E: 12 instances
+
+Synth Design complete | Checksum: 8c277966
+INFO: [Common 17-83] Releasing license: Synthesis
+196 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2036.730 ; gain = 1468.539
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2036.730 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/fpga/dt_pred/rtl/zynq_vio_ila/vivado_proj/dt_predictor_zynq.runs/synth_1/top_zedboard.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_zedboard_utilization_synth.rpt -pb top_zedboard_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 11 18:11:27 2026...
