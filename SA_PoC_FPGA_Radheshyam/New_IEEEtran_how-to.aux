@@ -1,0 +1,95 @@
+\relax 
+\citation{pvt_bowman}
+\citation{bgr_leung}
+\citation{imp_kim}
+\citation{self_heal_liu}
+\citation{pvt_bowman}
+\citation{sar_gondi}
+\citation{imp_kim}
+\citation{ml_kt_li}
+\citation{ml_onabajo}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{2}{}\protected@file@percent }
+\citation{bgr_leung}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Cadence Simulation Dataset Summary}}{3}{}\protected@file@percent }
+\newlabel{tab:dataset}{{I}{3}{}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Circuits and Dataset}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Why Trim Bits Are Required}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Dataset}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Input Features}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Input Feature Encoding}}{3}{}\protected@file@percent }
+\newlabel{tab:inputs}{{II}{3}{}{table.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Ring oscillator count overlap across five process corners. Different corners share the same \texttt  {pmon} range but require vastly different trim codes. Three inputs are needed for disambiguation.}}{3}{}\protected@file@percent }
+\newlabel{fig:pmon_overlap}{{1}{3}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Why Decision Trees}{3}{}\protected@file@percent }
+\newlabel{sec:why_dt}{{III}{3}{}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Physical Justification}{3}{}\protected@file@percent }
+\citation{sklearn}
+\citation{icarus}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Trim code heatmaps for the BGR across VDD $\times $ temperature showing the piecewise-constant (staircase) structure. Each colored region has a constant trim code that changes at discrete boundaries---the exact structure DTs are designed to model.}}{4}{}\protected@file@percent }
+\newlabel{fig:staircase}{{2}{4}{}{figure.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Model Comparison (BGR Circuit)}}{4}{}\protected@file@percent }
+\newlabel{tab:model_comp}{{III}{4}{}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Model Comparison}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Depth sweep for the 50\,$\Omega $ driver. Test accuracy increases to depth 14, then plateaus with no sign of overfitting.}}{4}{}\protected@file@percent }
+\newlabel{fig:depth}{{3}{4}{}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Three-state FSM for DT traversal. Each FETCH$+$COMPARE pair takes 2 clock cycles. Leaf detection terminates traversal.}}{4}{}\protected@file@percent }
+\newlabel{fig:fsm}{{4}{4}{}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Depth Selection}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}RTL Architecture}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}FSM-Based Tree Traversal}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}ROM Node Encoding}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}RTL Verification}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Validation Methodology}{4}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces ROM Node Format per Circuit}}{5}{}\protected@file@percent }
+\newlabel{tab:node_format}{{IV}{5}{}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces RTL vs.\ Python Model Parity (200 Test Vectors)}}{5}{}\protected@file@percent }
+\newlabel{tab:rtl}{{V}{5}{}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces ML Model Accuracy (Full Held-Out Test Set)}}{5}{}\protected@file@percent }
+\newlabel{tab:ml_acc}{{VI}{5}{}{table.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}RTL Parity Results}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}FPGA Prototyping on Zynq-7000}{5}{}\protected@file@percent }
+\newlabel{sec:fpga}{{VI}{5}{}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Motivation and Platform}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces FPGA Resource Utilization --- 50\,$\Omega $ Driver Predictor Only (Vivado 2025.2, Post-Synthesis)}}{5}{}\protected@file@percent }
+\newlabel{tab:fpga}{{VII}{5}{}{table.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Hardware-in-the-Loop Architecture}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Resource Utilization}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-D}}Timing Closure}{5}{}\protected@file@percent }
+\citation{Script_python_ref}
+\citation{sar_gondi}
+\citation{imp_kim}
+\citation{imp_kim}
+\citation{sar_gondi}
+\citation{razavi_book}
+\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces Resistance After ML-Predicted Trim (50\,$\Omega $ Driver)}}{6}{}\protected@file@percent }
+\newlabel{tab:impedance}{{VIII}{6}{}{table.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-E}}Hardware Verification}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Cadence Closed-Loop Validation}{6}{}\protected@file@percent }
+\newlabel{sec:cadence}{{VII}{6}{}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Methodology}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Impedance After Compensation (50\,$\Omega $ Driver)}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Comparison and Discussion}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-A}}Advantages}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Resistance after ML-predicted trim compensation for the 50\,$\Omega $ driver across all five PVT corners. All values lie within the $\pm $3\% specification.}}{6}{}\protected@file@percent }
+\newlabel{fig:resistance}{{5}{6}{}{figure.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces Proposed DT Engine vs.\ Traditional Methods}}{6}{}\protected@file@percent }
+\newlabel{tab:comparison}{{IX}{6}{}{table.9}{}}
+\citation{dt_struharik}
+\citation{pvt_bowman}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-B}}Limitations and Future Work}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Conclusion}{7}{}\protected@file@percent }
+\bibstyle{IEEEtran}
+\bibcite{bgr_leung}{1}
+\bibcite{imp_kim}{2}
+\bibcite{sar_gondi}{3}
+\bibcite{ml_kt_li}{4}
+\bibcite{ml_onabajo}{5}
+\bibcite{self_heal_liu}{6}
+\bibcite{sklearn}{7}
+\bibcite{icarus}{8}
+\bibcite{dt_struharik}{9}
+\bibcite{pvt_bowman}{10}
+\bibcite{razavi_book}{11}
+\bibcite{Script_python_ref}{12}
+\@writefile{toc}{\contentsline {section}{References}{8}{}\protected@file@percent }
+\gdef \@abspage@last{8}

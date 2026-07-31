@@ -1,0 +1,1 @@
+inputoffset cross(v("Vout" ?result "dc") "1" 1 "either" nil nil nil)
