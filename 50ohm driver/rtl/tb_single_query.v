@@ -4,7 +4,7 @@ module tb_single_query;
   reg [28:0] pmon_in;
   reg [4:0]  vreg_in;
   reg [9:0]  temp_in;
-  wire [7:0] pvtp_out, pvtn_out;
+  wire [13:0] pvtp_out, pvtn_out;
   wire done;
 
   dt_trim_predictor #(
@@ -13,9 +13,7 @@ module tb_single_query;
                     ) dut (
                       .clk(clk), .rst_n(rst_n), .start(start),
                       .pmon_in(pmon_in), .vreg_in(vreg_in), .temp_in(temp_in),
-                      .pvtp_out(pvtp_out), .pvtn_out(pvtn_out), .done(done),
-                      .cfg_wr_en(1'b0), .cfg_tree_sel(1'b0),
-                      .cfg_wr_addr(10'd0), .cfg_wr_data(60'd0)
+                      .pvtp_out(pvtp_out), .pvtn_out(pvtn_out), .done(done)
                     );
 
   initial
@@ -27,9 +25,9 @@ module tb_single_query;
   begin
     rst_n = 0;
     start = 0;
-    pmon_in = 29'd369419010;   // 248,568,380 Hz
-    vreg_in = 5'd17;            // 0.81V -> (0.81-0.80)*100 = 1
-    temp_in = 10'd44;           // -40C -> (-40+40)*4 = 0
+    pmon_in = 29'd211760220;   // pmon_cmos_res value instead of pmon_cmos
+    vreg_in = 5'd01;            // 0.81V -> (0.81-0.80)*100 = 1
+    temp_in = 10'd16;           // -36C -> (-36+40)*4 = 16
 
     #50 rst_n = 1;
     #20;

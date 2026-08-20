@@ -7,11 +7,8 @@
 simulator lang=spectre
 global 0
 parameters pvt0=1 pvt1=1 pvt2=1 pvt3=1 pvt4=1 pvt5=0 pvt6=0 pvt7=0 pvt8=0 pvt9=0 pvt10=0 pvt11=0 pvt12=0 pvt13=0 pvtn0=1 pvtn1=1 pvtn2=1 pvtn3=1 pvtn4=1 pvtn5=0 pvtn6=0 pvtn7=0 pvtn8=0 pvtn9=0 pvtn10=0 pvtn11=0 pvtn12=0 pvtn13=0 vreg=0.8100 tem=-39.5
-    pvt4=1 pvt5=0 pvt6=0 pvt7=0 pvt8=0 pvt9=0 pvtn10=0 pvtn11=0 pvtn12=0 \
-    pvtn13=0 pvtn0=1 pvtn1=0 pvtn2=1 pvtn3=1 pvtn4=0 pvtn5=0 pvtn6=0 \
-    pvtn7=0 pvtn8=0 pvtn9=0 vreg=0.99 tem=10
 include "/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" section=fsmacro_mos_moscap
-include "/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" section=fs_res_bip_dio_disres
+include "/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" section=ff_res_bip_dio_disres
 
 // Library name: tsmc28_tx
 // Cell name: tx_ser_inv_lvt_2x

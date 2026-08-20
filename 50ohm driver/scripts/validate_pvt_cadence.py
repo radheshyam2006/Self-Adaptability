@@ -148,34 +148,32 @@ def patch_netlist(base: str, pvtp_int: int, pvtn_int: int,
     """
     netlist = base
 
-    # 1. Replace the parameters line (may span multiple lines with backslash)
+    # 1. Replace the ENTIRE parameters block including all continuation lines.
+    #    In Spectre netlists, continuation lines ALWAYS start with whitespace.
+    #    The original block is 4 lines (line 9 + lines 10-12 indented with spaces).
+    #    Pattern: 'parameters ...' then zero-or-more lines starting with whitespace.
     new_param = make_param_line(pvtp_int, pvtn_int, vreg_v, temp_c)
     netlist = re.sub(
-        r"^parameters\b.*?(?=\n[^\+\\]|\Z)",
+        r"^parameters\b[^\n]*(?:\n[ \t]+[^\n]*)*",
         new_param,
         netlist,
         count=1,
-        flags=re.MULTILINE | re.DOTALL,
+        flags=re.MULTILINE,
     )
 
-    # 2. Replace the PDK model section to match the correct corner
+    # 2. Replace ONLY the mos_moscap section (controls transistor corner).
+    #    Do NOT touch the res_bip_dio_disres section — ff_res_bip_dio_disres
+    #    is valid for all corners for passive devices and must stay unchanged.
     section = CORNER_PDK_SECTION.get(corner, "fsmacro_mos_moscap")
     netlist = re.sub(
         r"section=\w+macro_mos_moscap",
         f"section={section}",
         netlist,
     )
-    # Also fix the res_bip_dio section (ff → ss etc.)
-    corner_prefix = section.split("macro")[0]   # e.g. "ff", "ss", "fs"
-    netlist = re.sub(
-        r"section=\w+_res_bip_dio_disres",
-        f"section={corner_prefix}_res_bip_dio_disres",
-        netlist,
-    )
 
-    # 3. Replace temperature in simulatorOptions (the temp=tem part is a parameter
-    #    reference, so we do NOT change that line — we already set tem= above)
-    #    No extra change needed here.
+    # 3. Temperature is already handled via the 'tem' parameter above.
+    #    simulatorOptions uses temp=tem which reads from parameters block.
+
 
     return netlist
 
@@ -319,17 +317,18 @@ def main():
     cd {SERVER_DIR}
 
     # Run ALL netlists in one loop:
+    # NOTE: standalone Spectre uses  -raw <dir>  NOT  =:  (=: is irun/AMS only)
     foreach f (*.scs)
       echo "=== $f ==="
-      spectre $f =: ${{f:r}}_psf/ +log ${{f:r}}.log
+      mkdir -p ${{f:r}}_psf
+      spectre $f -raw ${{f:r}}_psf +log ${{f:r}}.log
     end
 
-4.  Collect the resistance values from each .log file:
-    grep -i "outp\\|outn\\|R =" *.log
+4.  Collect the resistance from each .log file (quick check):
+    grep -i "spectre completed" *.log
+    grep -i "error" *.log
 
-    OR use the read_results.py script (generated next).
-
-5.  SCP results back to Windows:
+5.  SCP logs back to Windows:
     exit   (leave SSH)
     scp "{SERVER_USER}@{SERVER_HOST}:{SERVER_DIR}/*.log" "{OUTPUT_DIR}\\"
 """)
