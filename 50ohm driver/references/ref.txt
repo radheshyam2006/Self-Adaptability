@@ -1,0 +1,226 @@
+1. ASIC synthesis / PnR (fills your Table VII "Area: TBD")
+
+· R. Struharik and L. Novak, "Intellectual property core implementation of decision trees,"
+IET Comput. Digit. Tech., 2009 - you already cite this; it's your closest prior-art comp for
+DT hardware gate counts, worth pulling its actual area/gate numbers into your Table VII
+row if you haven't already.
+· A RISC-V TinyML accelerator paper reports a full Cadence Genus logic synthesis and
+CACTI memory-modeling flow at 28 nm, giving realistic area and power estimates for a
+low-power embedded design, which is a close methodological template for what you'd ru
+on your DT engine. arxiv
+. A flexible-precision DNN accelerator paper is a good methodology reference for TSMC 2
+nm: it uses Design Compiler and PrimeTime PX, synthesized in TSMC 28nm CMOS
+technology, with area/power breakdown reported per functional block - cite this for you
+DC+PrimeTime PX flow description. IEEE Xplore
+· DT2CAM (arXiv, decision-tree-to-CAM accelerator) is useful as a hardware-accelerator
+comparison table you can extend: it reports per-decision throughput and energy for
+several DT inference accelerators, comparing against ASIC and in-memory-compute
+implementations. arxiv
+
+2. Eye diagram / BER (fills your Table VIII SOTA comparison)
+
+. This is your sota_pam4 reference, now identified: Y .- U. Jeong, H. Park, C. Hyun, and S.
+Kim, "A 0.64-pJ/Bit 28-Gb/s/Pin High-Linearity Single-Ended PAM-4 Transmitter With an
+Impedance-Matched Driver and Three-Point ZQ Calibration for Memory Interface"
+(journal version of the 2020 VLSI Symposium paper). The 65 nm prototype occupies
+0.0333 mm2 and achieves 28 Gb/s/pin with RLM = 0.993 at 0.64 pJ/b - matches your Table
+VIII numbers exactly (0.0333 mm2 total). IEEE Xplore
+· This is your sota_tdzq reference: "A Single-Ended Impedance-Matched Transmitter
+With Single Ring-Oscillator-Based Time-Domain ZQ Calibration for Memory Interfaces,"
+IEEE Xplore doc 10479183. Fabricated in 65 nm CMOS, the transmitter and calibration
+scheme occupy 0.074 mm2 and 0.041 mm2 respectively, achieving a maximum error rate of
+1.5% and average error rate of 0.7% - matches your placeholder's "0.041 (Calib only)" and
+"0.7% (Avg)" values precisely. arxiv
+. K. Mossel et al. ( sota_sst, already correctly cited) - fine as-is.
+
+3. Dynamic tracking / glitch-free trim switching (your biggest gap - no prior citation exists
+in your draft)
+
+. C .- K. Lee et al., "Dual-Loop Two-Step ZQ Calibration for Dynamic Voltage-Frequency
+Scaling in LPDDR4 SDRAM," IEEE J. Solid-State Circuits, vol. 53, no. 10, pp. 2906-2916,
+2018. This introduces a code-referred periodic ZQ update (CPZU) scheme that tracks
+voltage and temperature variation during background mode while minimizing
+malfunction risk from internal and external noise interference - this is precisely the
+"continuous tracking without glitching data" precedent you need for L3/future work.
+ResearchGate
+
+· JEDEC ZQCL/ZQCS background calibration concept: re-calibrating impedance during
+normal operation as voltage and temperature drift reduces impedance discontinuity, with
+ZQCS continuously tracking and compensating PVT variation to preserve the data eye -
+good conceptual citation (Rambus/JEDEC glossary-level, cite as an industry-standard
+reference rather than a research paper). Microchip
+· ISSCC 2026 (advance program): K. Kim et al., "Bidirectional Transceiver with
+PVT/Mismatch Tracking for XSR and D2D Interfaces in 28nm CMOS," Seoul National
+University - very recent, same node as you; worth citing as
+"concurrent/contemporaneous work" once published, showing dynamic tracking is an
+active 2026 research direction.
+
+4. Sensor noise robustness (your Item 4 - no citation currently)
+
+· A 2025/2026 survey directly frames your problem: attribute noise - errors in recorded
+input values due to instrument faults or calibration issues - can markedly degrade a
+classifier's performance, and robustness (stable outputs despite moderate input
+perturbation) is a key requirement for ML models in dynamic environments. Good
+general citation for framing your noise-injection experiment. arxiv
+· "Analog Design and Machine Learning: A Review" (Electronics, 2025) has a directly
+analogous case study: an on-chip seizure-detection IC uses a probabilistic decision-
+boundary training mechanism to ensure robustness against analog variability and
+quantization noise - strong precedent for "DT/classifier robustness against noisy analog
+sensor inputs." arxiv
+
+Metric
+
+Technology
+
+Kossel
+sota_sst
+(2008,
+65nm)
+
+65nm CMOS
+
+Jeong
+sota_pam4
+(2020,65nm)
+
+65nm CMOS
+
+Ring-Osc TD-
+ZQ
+sota_tdzq
+(65nm)
+
+65nm CMOS
+
+Lee CPZU
+(2018 JSSC,
+20nm)
+
+This Work
+
+20nm DRAM
+
+Method
+
+Analog SST
+tuning
+
+Analog 3-point
+ZQ
+
+Ring-osc. time-
+domain ZQ
+
+Calibration error
+
+<- 16dB RL
+
+N/A
+
+Area
+
+0.0648 mm2
+(total)
+
+0.0333 mm2
+(total)
+
+1.5% max /
+0.7% avg
+
+0.041 mm2
+(calib only)
+
+Dual-loop 2-
+step ZQ +
+background
+tracking
+
+Not disclosed
+here
+
+Not disclosed
+here
+
+28nm
+CMOS
+
+Digital ML
+Decision
+Tree
+
+Dynamic/background
+tracking
+
+Eye diagram / BER
+reported
+
+No
+
+No
+
+No
+
+Yes (CPZU)
+
+No
+
+Yes (RLM-
+based)
+
+No
+
+No
+
+Sensor-noise
+robustness study
+
+Multipliers
+
+Reconfigurable
+
+No
+
+No
+
+No
+
+No
+
+0.73% max
+(DC only)
+
+TBD-
+needs
+synthesis
+
+No-one-
+shot only
+
+No-DC
+impedance
+only
+
+No
+
+N/A
+
+No
+
+N/A
+
+No
+
+N/A
+
+No
+
+N/A
+
+Firmware-
+level
+
+O
+
+Yes (10.6KB
+SRAM)

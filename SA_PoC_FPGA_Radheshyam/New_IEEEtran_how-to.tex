@@ -460,6 +460,27 @@ NN (32,16) & $\sim$2\,KB & $\sim$10\,cyc & 848 & No \\
 \end{tabular}
 \end{table}
 
+\subsection{State-of-the-Art Comparison}
+Table~\ref{tab:sota_comp} compares the proposed ML-based calibration with recent state-of-the-art transmitter impedance calibration techniques. Unlike traditional analog approaches~\cite{sota_pam4} or time-domain ring-oscillator calibrations~\cite{sota_tdzq}, the proposed purely digital Decision Tree engine requires zero multipliers and zero precision external components. By leveraging on-chip sensors and piecewise-constant modeling, the proposed design achieves competitive calibration accuracy (0.73\% maximum error vs. 0.7\% average error in~\cite{sota_tdzq}) while being highly portable across technology nodes due to its SRAM-based reconfigurable architecture.
+
+\begin{table}[!t]
+\caption{Comparison with State-of-the-Art Impedance Calibration\label{tab:sota_comp}}
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Metric} & \textbf{\cite{sota_sst}} & \textbf{\cite{sota_pam4}} & \textbf{\cite{sota_tdzq}} & \textbf{This Work} \\
+\midrule
+\textbf{Technology} & 65-nm CMOS & 65-nm CMOS & 65-nm CMOS & \textbf{28-nm CMOS} \\
+\textbf{Method} & Analog SST Tuning & Analog 3-Point ZQ & Time-Domain ZQ & \textbf{Digital ML DT} \\
+\textbf{Error Rate} & $<$-16dB RL & N/A & 0.7\% (Avg) & \textbf{0.73\% (Max)} \\
+\textbf{Area ($\text{mm}^2$)} & 0.0648 (Total) & 0.0333 (Total) & 0.041 (Calib only) & \textbf{TBD$^\ast$} \\
+\textbf{Multipliers} & N/A & N/A & N/A & \textbf{0} \\
+\textbf{Reconfigurable} & No & No & No & \textbf{Yes (10.6\,KB SRAM)} \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize $^\ast$Post-layout ASIC synthesis area to be reported in future work.}
+\end{tabular}
+\end{table}
+
 \subsection{Advantages}
 
 \textbf{(a) Zero external components:} No precision resistors, no dedicated IC pins. External-resistor calibration adds \$0.03--0.15 per unit in BOM cost and consumes package pin space~\cite{imp_kim}.
@@ -570,7 +591,20 @@ B.~Razavi, \textit{Design of Analog CMOS Integrated Circuits}, 2nd~ed. New York,
 \bibitem{Script_python_ref}
 Z.~Abbas, ``Internal lab automation framework for parallelized Cadence Spectre PVT corner sweeps,'' CVEST, IIIT Hyderabad, unpublished, 2025.
 
+\bibitem{sota_sst}
+M.~Kossel \textit{et al.}, ``A T-Coil-Enhanced 8.5 Gb/s High-Swing SST Transmitter in 65 nm Bulk CMOS With $<$ $-$16 dB Return Loss Over 10 GHz Bandwidth,'' \textit{IEEE J. Solid-State Circuits}, vol.~43, no.~12, pp.~2905--2920, Dec.~2008.
+
+\bibitem{sota_pam4}
+Y.-U.~Jeong, H.~Park, C.~Hyun, and S.~Kim, ``A 0.64-pJ/Bit 28-Gb/s/Pin High-Linearity Single-Ended PAM-4 Transmitter With an Impedance-Matched Driver and Three-Point ZQ Calibration for Memory Interface,'' \textit{IEEE J. Solid-State Circuits}, vol.~56, no.~6, pp.~1892--1903, Jun.~2021.
+
+\bibitem{sota_tdzq}
+H.~Park, Y.-U.~Jeong, and S.~Kim, ``A Single-Ended Impedance-Matched Transmitter With Single Ring-Oscillator-Based Time-Domain ZQ Calibration for Memory Interfaces,'' \textit{IEEE J. Solid-State Circuits}, vol.~58, no.~4, pp.~1051--1063, Apr.~2023.
+
+\bibitem{lee_cpzu}
+C.-K.~Lee \textit{et al.}, ``Dual-Loop Two-Step ZQ Calibration for Dynamic Voltage-Frequency Scaling in LPDDR4 SDRAM,'' \textit{IEEE J. Solid-State Circuits}, vol.~53, no.~10, pp.~2906--2916, Oct.~2018.
+
 \end{thebibliography}
+
 
 \vfill
 

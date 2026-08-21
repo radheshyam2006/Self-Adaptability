@@ -1,0 +1,41 @@
+;; =================================================================
+;; Ocean Script: Extract Pull-Up and Pull-Down Resistance
+;; Usage: ocean -nograph < measure_resistance.ocn
+;; This is called automatically by run_all_corners.sh
+;; =================================================================
+;; 
+;; Manual usage (for testing a single simulation):
+;;   1. Run spectre on a .scs file
+;;   2. Open Ocean: ocean -nograph
+;;   3. Load this script: load("measure_resistance.ocn")
+;;
+;; The resistance measurement formula matches Maestro:
+;;   pup = average(clip((V(vdd) - V(outp)) / I(xdrv_p/out), 450ns, 490ns))
+;;   pdn = -1 * average(clip(V(outn) / I(xdrv_p/out), 450ns, 490ns))
+;;
+;; Expected output: ~50 ohm for both if trim is correct
+;; =================================================================
+
+procedure(measureResistance(simDir outputFile)
+    openResults(simDir)
+    selectResult('tran)
+    
+    ;; Pull-up resistance
+    pup = average(clip(
+        (v("/vdd") - v("/outp")) / i("/xdrv_p/out")
+        4.5e-7 4.9e-7
+    ))
+    
+    ;; Pull-down resistance  
+    pdn = -1.0 * average(clip(
+        v("/outn") / i("/xdrv_p/out")
+        4.5e-7 4.9e-7
+    ))
+    
+    ;; Write result
+    port = outfile(outputFile)
+    fprintf(port "%.6f,%.6f\n" pup pdn)
+    close(port)
+    
+    printf("  R_up = %.4f ohm, R_dn = %.4f ohm\n" pup pdn)
+)
