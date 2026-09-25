@@ -50,31 +50,19 @@ import numpy as np
 # SETTINGS — edit these to match your file paths
 # ─────────────────────────────────────────────────────────────────────────────
 
-EXCEL_PATH = (
-    r"c:\Users\radhe\OneDrive\Documents\AI_Self-adaptive_Chip"
-    r"\Self Adaptability\50ohm driver"
-    r"\TSMC28nm_DRV_ML_MAR6_LookUP_Table_Mar20_ML Predictions.xlsx"
-)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
 
-BASE_NETLIST_PATH = (
-    r"c:\Users\radhe\OneDrive\Documents\AI_Self-adaptive_Chip"
-    r"\Self Adaptability\50ohm driver\tx_netlist.txt"
-)
+EXCEL_PATH = os.path.join(PROJECT_DIR, "data",
+    "TSMC28nm_DRV_ML_MAR6_LookUP_Table_Mar20_ML Predictions.xlsx")
 
-MODEL_PVTP_PATH = (
-    r"c:\Users\radhe\OneDrive\Documents\AI_Self-adaptive_Chip"
-    r"\Self Adaptability\50ohm driver\ml\best_model_pvtp_d14.pkl"
-)
+BASE_NETLIST_PATH = os.path.join(PROJECT_DIR, "netlist", "netlist.txt")
 
-MODEL_PVTN_PATH = (
-    r"c:\Users\radhe\OneDrive\Documents\AI_Self-adaptive_Chip"
-    r"\Self Adaptability\50ohm driver\ml\best_model_pvtn_d14.pkl"
-)
+MODEL_PVTP_PATH = os.path.join(PROJECT_DIR, "ml", "best_model_pvtp_d14.pkl")
 
-OUTPUT_DIR = (
-    r"c:\Users\radhe\OneDrive\Documents\AI_Self-adaptive_Chip"
-    r"\Self Adaptability\50ohm driver\sweep_output\cadence_validation"
-)
+MODEL_PVTN_PATH = os.path.join(PROJECT_DIR, "ml", "best_model_pvtn_d14.pkl")
+
+OUTPUT_DIR = os.path.join(PROJECT_DIR, "sweep_output", "cadence_validation")
 
 # Which Excel sheets to use (one per corner)
 SHEETS_TO_TEST = ["FF_vdd_temp", "SS_vdd_test", "TT_vdd_test"]
@@ -93,7 +81,7 @@ CORNER_PDK_SECTION = {
 }
 
 # Server details
-SERVER_HOST = "10.2.20.16"
+SERVER_HOST = "10.1.73.18"
 SERVER_USER = "user13"
 SERVER_DIR  = "~/cadence_val_runs"
 

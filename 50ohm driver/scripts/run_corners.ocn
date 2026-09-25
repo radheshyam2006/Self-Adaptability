@@ -1,0 +1,48 @@
+; run_corners.ocn
+; Ocean script to run 5 random test cases and extract pup/pdn resistance
+
+simulator('spectre)
+design("/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/netlist")
+resultsDir("/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/ocean_results")
+
+; We will sweep Temperature and Vreg for 5 random test cases.
+tests = list(
+  list("Test1" -40 0.81)
+  list("Test2"   0 0.90)
+  list("Test3"  25 0.99)
+  list("Test4"  80 1.08)
+  list("Test5" 125 1.00)
+)
+
+; Open a CSV file to write the results
+out_file = outfile("resistance_results.csv")
+fprintf(out_file "Test_Case,Temperature,Vreg,pup_Resistance(Ohms),pdn_Resistance(Ohms)\n")
+
+foreach(test tests
+    test_name = nth(0 test)
+    temp_val  = nth(1 test)
+    vreg_val  = nth(2 test)
+    
+    printf("Running %s at Temp=%d, Vreg=%f...\n" test_name temp_val vreg_val)
+    
+    ; Set the design variables
+    desVar("tem" temp_val)
+    desVar("vreg" vreg_val)
+    
+    ; Run the simulation
+    run()
+    
+    ; Switch to transient results for calculations
+    selectResults('tran)
+    
+    ; Calculate resistances using the exact ADE expressions from your screenshot
+    pup_val = average((clip((v("/vdd" ?result "tran") - v("/outn" ?result "tran")) 2e-07 2.5e-07) / clip(i("/xdrv_p/out" ?result "tran") 2e-07 2.5e-07)))
+    pdn_val = (average((clip(v("/outp" ?result "tran") 2e-07 2.5e-07) / clip(i("/xdrv_n/out" ?result "tran") 2e-07 2.5e-07))) * -1)
+    
+    ; Write to CSV
+    fprintf(out_file "%s, %d, %f, %f, %f\n" test_name temp_val vreg_val pup_val pdn_val)
+    printf("  -> Result: pup=%f, pdn=%f\n" pup_val pdn_val)
+)
+
+close(out_file)
+printf("\nAll 5 simulations complete! Check resistance_results.csv to compare with your Excel sheet.\n")

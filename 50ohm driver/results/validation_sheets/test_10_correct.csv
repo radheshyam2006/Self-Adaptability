@@ -1,0 +1,11 @@
+Corner,Voltage_V,Temp_C,Ring_Osc_Freq_PMON_Hz,Initial_Pup_Raw_Ohm,Initial_Pdn_Raw_Ohm,Ground_Truth_PVTP_Int,Ground_Truth_PVTP_Bits,Ground_Truth_PVTN_Int,Ground_Truth_PVTN_Bits,Ground_Truth_Target_Pup_Ohm,Ground_Truth_Target_Pdn_Ohm,ML_Predicted_PVTP_Int,ML_Predicted_PVTP_Bits,ML_Predicted_PVTN_Int,ML_Predicted_PVTN_Bits,PVTP_Trim_Error_LSB,PVTN_Trim_Error_LSB,Trim_Match_Status,Dataset_Partition,Simulated_Pup_Ohm,Simulated_Pdn_Ohm
+TT,0.85,42.0,266391740,51.22,51.05,60,111100,60,111100,49.97,49.73,60,111100,60,111100,0,0,Exact Match,Validation_TestSet,,
+TT,0.95,27.0,332108740,49.65,49.76,31,11111,31,11111,49.65,49.57,31,11111,31,11111,0,0,Exact Match,Validation_TestSet,,
+FF,0.85,69.5,297447720,45.17,44.8,15,1111,15,1111,50.25,49.47,15,1111,15,1111,0,0,Exact Match,Validation_TestSet,,
+FF,0.95,78.5,352006980,44.69,44.32,15,1111,14,1110,49.74,50.31,15,1111,14,1110,0,0,Exact Match,Validation_TestSet,,
+SS,0.85,34.0,234183410,58.53,57.87,251,11111011,250,11111010,49.74,50.3,251,11111011,250,11111010,0,0,Exact Match,Validation_TestSet,,
+SS,0.95,45.5,291013180,57.16,56.91,249,11111001,248,11111000,49.67,50.55,249,11111001,248,11111000,0,0,Exact Match,Validation_TestSet,,
+FS,0.85,-14.0,283133940,45.62,43.12,27,11011,14,1110,50.736,49.44,27,11011,14,1110,0,0,Exact Match,Validation_TestSet,,
+FS,0.95,71.5,330471760,46.82,44.08,28,11100,14,1110,50.695,50.32,28,11100,14,1110,0,0,Exact Match,Validation_TestSet,,
+SF,0.85,77.5,253282560,56.51,58.62,124,1111100,126,1111110,50.208,49.917,124,1111100,126,1111110,0,0,Exact Match,Validation_TestSet,,
+SF,0.95,60.5,309854890,55.16,56.97,123,1111011,125,1111101,50.13,49.7,123,1111011,125,1111101,0,0,Exact Match,Validation_TestSet,,

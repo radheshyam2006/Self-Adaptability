@@ -1,0 +1,120 @@
+;====================Set to Maestro mode explorer =============================
+ocnSetXLMode("explorer")
+ocnxlProjectDir( "~/simulation" )
+ocnxlTargetCellView( "tsmc28_tx_tb" "tx_drv_ML" "maestro" )
+ocnxlResultsLocation( "" )
+ocnxlSimResultsLocation( "" )
+ocnxlMaxJobFail( 20 )
+
+;====================== Tests setup ============================================
+
+;---------- Test "tsmc28_tx_tb_tx_drv_ML_1" ------------- 
+ocnxlBeginTest("tsmc28_tx_tb_tx_drv_ML_1")
+simulator( 'spectre )
+design( "tsmc28_tx_tb" "tx_drv_ML" "schematic_seriliazer_top")
+modelFile( 
+    '("/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_1d8_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" "ttmacro_mos_moscap")
+    '("/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_1d8_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" "tt_res_bip_dio_disres")
+    '("/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_1d8_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" "pre_simu")
+)
+analysis('tran ?stop "100n"  )
+desVar(	  "pvt0" 1	)
+desVar(	  "pvt1" 1	)
+desVar(	  "pvt2" 1	)
+desVar(	  "pvt3" 1	)
+desVar(	  "pvt4" 1	)
+desVar(	  "pvt5" 0	)
+desVar(	  "pvt6" 0	)
+desVar(	  "pvt7" 0	)
+desVar(	  "pvt8" 0	)
+desVar(	  "pvt9" 0	)
+desVar(	  "pvt10" 0	)
+desVar(	  "pvt11" 0	)
+desVar(	  "pvt12" 0	)
+desVar(	  "pvt13" 0	)
+desVar(	  "pvtn0" 1	)
+desVar(	  "pvtn1" 1	)
+desVar(	  "pvtn2" 1	)
+desVar(	  "pvtn3" 1	)
+desVar(	  "pvtn4" 1	)
+desVar(	  "pvtn5" 0	)
+desVar(	  "pvtn6" 0	)
+desVar(	  "pvtn7" 0	)
+desVar(	  "pvtn8" 0	)
+desVar(	  "pvtn9" 0	)
+desVar(	  "pvtn10" 0	)
+desVar(	  "pvtn11" 0	)
+desVar(	  "pvtn12" 0	)
+desVar(	  "pvtn13" 0	)
+desVar(	  "vreg" 0.91	)
+envOption(
+	'firstRun  t 
+	'analysisOrder  list("pz" "dcmatch" "stb" "tran" "envlp" "ac" "dc" "lf" "noise" "xf" "sp" "pss" "pac" "pstb" "pnoise" "pxf" "psp" "qpss" "qpac" "qpnoise" "qpxf" "qpsp" "hb" "hbac" "hbstb" "hbnoise" "hbxf" "sens" "acmatch") 
+)
+saveOption( ?infoOptions list(list("modelParameter" "models" "rawfile" "" "" "" t) list("element" "inst" "rawfile" "" "" "" t) list("outputParameter" "output" "rawfile" "" "" "" t) list("designParamVals" "parameters" "rawfile" "" "" "" t) list("primitives" "primitives" "rawfile" "" "" "" t) list("subckts" "subckts" "rawfile" "" "" "" t) list("asserts" "assert" "rawfile" "" "" "" nil) list("extremeinfo" "all" "logfile" "" "yes" "" nil) list("allcap" "allcap" "file" "" "" "" nil) list("<Click_To_Add>" "none" "rawfile" "" "" "" nil) ) )
+save( 'i "/xdrv_p/out" )
+temp( 27 ) 
+ocnxlOutputTerminal( "/xdrv_p/out" ?save t)
+ocnxlOutputExpr( "value(((vtime('tran \"/vdd\") - vtime('tran \"/outn\")) / i(\"/xdrv_p/out\" ?result \"tran\")) 8e-08 ?period nil ?xName \"time\")" ?name "pup_res" ?plot t)
+ocnxlOutputExpr( "value((vtime('tran \"/outp\") / i(\"/xdrv_p/out\" ?result \"tran\")) 8e-08 ?period nil ?xName \"time\")" ?name "pdn_res" ?plot t)
+ocnxlEndTest() ; "tsmc28_tx_tb_tx_drv_ML_1"
+
+;====================== Sweeps setup ===========================================
+
+;====================== Model Group setup ==========================================
+
+;====================== Corners setup ==========================================
+ocnxlCorner( "C0"
+   '(
+      ("variable" "temperature" "-40:0.5:125")
+      ("modelGroup" "")
+   )
+)
+
+;====================== Checks and Asserts setup ============================================
+ocnxlPutChecksAsserts(?netlist nil)
+
+;====================== Job setup ==============================================
+ocnxlJobSetup( '(
+	"blockemail" "1"
+	"configuretimeout" "300"
+	"defaultcpuvalue" "1"
+	"defaultmemoryvalue" "1000"
+	"distributionmethod" "Local"
+	"jobruntype" "ICRP"
+	"estimatecpuvalue" ""
+	"estimatememoryvalue" ""
+	"estimationsimulationmode" "0"
+	"lingertimeout" "300"
+	"maxjobs" "1"
+	"name" "Maestro Default"
+	"preemptivestart" "1"
+	"providecpuandmemorydata" "1"
+	"reconfigureimmediately" "1"
+	"runpointsvalue" "5"
+	"runtimeout" "-1"
+	"scaleestimatedbycpu" "100"
+	"scaleestimatedbymemory" "100"
+	"showerrorwhenretrying" "1"
+	"showoutputlogerror" "0"
+	"startmaxjobsimmed" "1"
+	"starttimeout" "300"
+	"usesameprocess" "1"
+	"warndisklow" "0"
+	"warnthresholdvalue" "100"
+) )
+
+;====================== Disabled items =========================================
+ocnxlDisableCorner("C0")
+
+;====================== Run Mode Options ======================================
+
+;====================== Starting Point Info ======================================
+
+;====================== Run command ============================================
+ocnxlRun( ?mode 'sweepsAndCorners ?nominalCornerEnabled t ?allCornersEnabled nil ?allSweepsEnabled t)
+ocnxlOutputSummary(?exprSummary t ?specSummary t ?detailed t ?wave t)
+ocnxlOpenResults()
+
+;====================== End XL Mode command ===================================
+ocnxlEndXLMode("explorer")

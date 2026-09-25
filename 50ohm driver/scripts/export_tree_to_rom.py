@@ -198,7 +198,7 @@ def generate_rom_verilog(rom_data, module_name, n_nodes, filename):
 def generate_test_vectors(n_vectors=200):
     """Generate test vectors from the test set for Verilog testbench."""
     
-    EXCEL_FILE = os.path.join(PROJECT_DIR,
+    EXCEL_FILE = os.path.join(PROJECT_DIR, "data",
         "TSMC28nm_DRV_ML_MAR6_LookUP_Table_Mar20_ML Predictions.xlsx")
     CORNER_SHEETS = {'FF':'FF_vdd_temp','SS':'SS_vdd_test','TT':'TT_vdd_test',
                      'FS':'FS_vdd_test','SF':'SF_vdd_test'}

@@ -1,0 +1,358 @@
+COPYRIGHT (C) 1992-2021  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+          (C) 1992-2021  UNIX SYSTEMS Laboratories INC.,
+                         Reproduced with permission.
+
+This Cadence Design Systems program and online documentation are
+proprietary/confidential information and may be disclosed/used only
+as authorized in a license agreement controlling such use and disclosure.
+
+          RESTRICTED RIGHTS NOTICE (SHORT FORM)
+Use/reproduction/disclosure is subject to restriction
+set forth at FAR 1252.227-19 or its equivalent.
+Loading geView.cxt 
+Loading menuBuilder.cxt 
+Loading schView.cxt 
+Loading selectSv.cxt 
+Loading pvsui.cxt
+Loading wireEdit.cxt 
+Loading pte2.cxt 
+Loading xlUI.cxt 
+Loading auCore.cxt 
+Loading vhdl.cxt 
+Loading seismic.cxt 
+Loading ci.cxt 
+Loading ams.cxt 
+Loading adexlDM.cxt 
+Loading cpf.cxt 
+Loading cli.cxt 
+Loading lp.cxt 
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.75s.
+*WARNING* LIB basic from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 3 redefines
+LIB basic from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE basic
+before DEFINE basic
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE basic
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* LIB analogLib from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 4 redefines
+LIB analogLib from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE analogLib
+before DEFINE analogLib
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE analogLib
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* LIB test from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 7 redefines
+LIB test from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE test
+before DEFINE test
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE test
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* The directory: '/home/cadence-2023/IC618/tools.lnx86/affirma_ams/etc/connect_lib/connectLib' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'connectLib'.
+*WARNING* The directory: '/home/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/test' does not exist
+	but was defined in libFile '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib' for Lib 'test'.
+*WARNING* The directory: '/home/cad/IC617/tools.lnx86/dfII/etc/cdsDefTechLib' does not exist
+	but was defined in libFile '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib' for Lib 'cdsDefTechLib'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/oscillator_self_heal' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'oscillator_self_heal'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/ldo_self_heal' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'ldo_self_heal'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/Final_Self_Healing' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'Final_Self_Healing'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/Abhishek_pv' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'Abhishek_pv'.
+Loading oasis.cxt 
+Loading dal.cxt 
+Loading awv.cxt 
+Loading vdsil.cxt 
+Loading analog.cxt 
+Loading asimenv.cxt 
+Loading spectrei.cxt 
+Loading socket.cxt 
+Loading par.cxt 
+Loading alvs.cxt 
+Loading caa.cxt 
+Loading amps.cxt 
+Loading adexlCore.cxt 
+Loading adexl.cxt 
+Loading lx.cxt 
+Loading lce.cxt 
+Loading le.cxt 
+Loading rte.cxt 
+Loading te.cxt 
+Loading schHDL.cxt 
+Loading devCheck.cxt 
+Loading relXpert.cxt 
+Loading simui.cxt 
+*WARNING* LIB basic from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 3 redefines
+LIB basic from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE basic
+before DEFINE basic
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE basic
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* LIB analogLib from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 4 redefines
+LIB analogLib from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE analogLib
+before DEFINE analogLib
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE analogLib
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* LIB test from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 7 redefines
+LIB test from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE test
+before DEFINE test
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE test
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* The directory: '/home/cadence-2023/IC618/tools.lnx86/affirma_ams/etc/connect_lib/connectLib' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'connectLib'.
+*WARNING* The directory: '/home/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/test' does not exist
+	but was defined in libFile '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib' for Lib 'test'.
+*WARNING* The directory: '/home/cad/IC617/tools.lnx86/dfII/etc/cdsDefTechLib' does not exist
+	but was defined in libFile '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib' for Lib 'cdsDefTechLib'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/oscillator_self_heal' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'oscillator_self_heal'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/ldo_self_heal' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'ldo_self_heal'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/Final_Self_Healing' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'Final_Self_Healing'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/Abhishek_pv' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'Abhishek_pv'.
+*WARNING* (DB-270000): dbOpenCellViewByType: Unable to lock database file for tsmc28_tx_tb/tx_drv_ML/schematic_seriliazer_top.
+Initializing from libInit.il for library tsmcN28...
+   --  load_apc_tsmc_n28.il
+   --  apc_util.cdn
+   --  tsmcN28.pce
+   --  cniUtils_encrypted.il
+   --  tsmcPdkParamTable.il
+   --  tsmcLDEparamTable.il
+   --  tsmcN28_CB_1.cxt
+   --  tsmcN28Tool.cxt
+   --  tsmcN28_updateCDFs.cxt
+   --  tsmcN28_gateCB.cxt
+   --  tsmcN28_CB_3.cxt
+   --  tsmcN28_tif.cxt
+   --  tsmc_LDE.cxt
+   --  tsmcSim_cdf_api.cxt
+   --  tsmcN28.cxt
+   --  tsmcN28_CB_2.cxt
+   --  metalRES.cxt
+   --  tsmcDNA_utility.cxt
+   --  tsmcN28_CB_4.cxt
+Loading hspiceD.cxt 
+Loading spectreinl.cxt 
+Loading msgHandler.cxt 
+Loading UltraSim.cxt 
+Loading AMSOSS.cxt 
+Loading AMS.cxt 
+Loading PDK Display File '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/tsmcN28/../display.drf'
+
+[Sim 1] Running TT at Vreg=0.89, Temp=18.0...
+Delete psf data in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/ocean_results_phase0_2d5/psf.
+Loading seCore.cxt 
+Begin Incremental Netlisting Sep 12 01:18:48 2026
+End netlisting Sep 12 01:18:48 2026
+Loading monte.cxt 
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+
+Spectre (R) Circuit Simulator
+Version 20.1.0.231.isr6 64bit -- 2 May 2021
+Copyright (C) 1989-2021 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence and Spectre are registered trademarks of Cadence
+        Design Systems, Inc. All others are the property of their respective
+        holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: user13   Host: eecs-ser2.iiit.ac.in   HostID: 10A1249   PID: 6568
+Memory  available: 23.4114 GB  physical: 66.8145 GB
+Linux   : Red Hat Enterprise Linux Server release 7.9 (Maipo)
+CPU Type: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz
+All processors running at 2400.0 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 ( 16 ),  1 ( 17 ),  2 ( 18 ),  3 ( 19 ),  4 ( 20 )
+                 5 ( 21 ),  6 ( 22 ),  7 ( 23 ),  8 ( 24 ),  9 ( 25 )
+                10 ( 26 ), 11 ( 27 ), 12 ( 28 ), 13 ( 29 ), 14 ( 30 )
+                15 ( 31 )
+        
+System load averages (1min, 5min, 15min) : 10.8 %, 18.7 %, 28.6 %
+Hyperthreading is enabled
+HPC is enabled
+
+
+Simulating `input.scs' on eecs-ser2.iiit.ac.in at 1:18:49 AM, Sat Sep 12, 2026
+        (process id: 6568).
+Current working directory:
+        /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/simulation/tx_drv_ML/spectre/schematic_seriliazer_top/netlist
+Command line:
+    /home/cadence-2023/SPECTRE201/tools/bin/spectre -64 input.scs  \
+        +escchars +log  \
+        ../../../../../validation/ocean_results_phase0_2d5/psf/spectre.out  \
+        +inter=mpsc +mpssession=spectre0_639_1 -format psfxl -raw  \
+        ../../../../../validation/ocean_results_phase0_2d5/psf +aps  \
+        +lqtimeout 900 -maxw 5 -maxn 5 -env ade
+Licensing Information:
+[01:18:49.214458] Configured Lic search path (20.02-p002):
+        5280@14.139.1.126:5280@10.4.17.157
+
+Licensing Information:
+[01:18:52.419761] Periodic Lic check successful
+
+Reading file: 
+        /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/simulation/tx_drv_ML/spectre/schematic_seriliazer_top/netlist/input.scs
+Reading file: 
+        /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2_shrink0d9_embedded_usage.scs
+Reading file: 
+        /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2.scs
+Time for NDB Parsing: CPU = 2.47947 s, elapsed = 5.86644 s.
+Time accumulated: CPU = 2.74356 s, elapsed = 5.86645 s.
+Peak resident memory used = 145 Mbytes.
+
+Reading link: 
+        /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file: 
+        /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link: 
+        /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file: 
+        /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/ahdl/constants.vams
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-1131): Scope option `scalefactor' specified with scope
+        `TopCircuit' at line `191' has also been specified at line `1186' in
+        file
+        `/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2_shrink0d9_embedded_usage.scs'.
+        As a result, the last specified value will be used for simulation.
+    WARNING (SFE-1131): Scope option `scalefactor' specified with scope
+        `TopCircuit' at line `1186' has also been specified at line `10' in
+        file
+        `/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2_shrink0d9_embedded_usage.scs'.
+        As a result, the last specified value will be used for simulation.
+
+Existing shared object for module bsource_c73fd1 is up to date.
+Installed compiled interface for bsource_c73fd1.
+Existing shared object for module bsource_rupoly1_e3f928 is up to date.
+Installed compiled interface for bsource_rupoly1_e3f928.
+Existing shared object for module bsource_rupoly2_c704ac is up to date.
+Installed compiled interface for bsource_rupoly2_c704ac.
+Existing shared object for module bsource_d18ee1 is up to date.
+Installed compiled interface for bsource_d18ee1.
+Time for Elaboration: CPU = 457.618 ms, elapsed = 458.694 ms.
+Time accumulated: CPU = 3.20127 s, elapsed = 6.32524 s.
+Peak resident memory used = 185 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+
+
+Time for EDB Visiting: CPU = 158.833 ms, elapsed = 159.206 ms.
+Time accumulated: CPU = 3.36021 s, elapsed = 6.48454 s.
+Peak resident memory used = 198 Mbytes.
+
+
+Global user options:
+         psfversion = 1.4.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 18
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile =
+        ../../../../../validation/ocean_results_phase0_2d5/psf/sens.output
+     checklimitdest = psf
+               save = allpub
+        scalefactor = 0.9
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 2640
+             iprobe 1     
+              bsim4 4242  
+     bsource_c73fd1 56    
+     bsource_d18ee1 56    
+bsource_rupoly1_e3f928 112   
+bsource_rupoly2_c704ac 224   
+          capacitor 356   
+           resistor 2     
+            vsource 32    
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Notice from spectre during initial setup.
+    APS enabled.
+simulate...
+    Multithreading enabled: 8 threads in the system with 32 available
+        processors.
+
+Time for parsing: CPU = 195.498 ms, elapsed = 3.99782 s.
+Time accumulated: CPU = 3.55581 s, elapsed = 10.4825 s.
+Peak resident memory used = 216 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0,
+        spectre0_639_1, ).
+
+Error found by spectre.
+    ERROR (SPECTRE-8390): Problem encountered in setting up the mpsc front
+        end.
+
+Licensing Information:
+Lic Summary:
+[01:18:59.061104] Cdslmd servers:5280@14.139.1.126:5280@10.4.17.157
+[01:18:59.061122] Feature usage summary:
+[01:18:59.061123] Virtuoso_Multi_mode_Simulation
+
+
+Aggregate audit (1:18:59 AM, Sat Sep 12, 2026):
+Time used: CPU = 3.64 s, elapsed = 10.6 s, util. = 34.4%.
+Time spent in licensing: elapsed = 6.18 s, percentage of total = 58.5%.
+Peak memory used = 217 Mbytes.
+Simulation started at: 1:18:49 AM, Sat Sep 12, 2026, ended at: 1:18:59 AM, Sat
+        Sep 12, 2026, with elapsed time (wall clock): 10.6 s.
+spectre completes with 1 error, 3 warnings, and 3 notices.
+Loading viva.cxt 
+WARNING (OCN-6038): Results tran are not available for /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/ocean_results_phase0_2d5. Use results() for a list of available results.
+WARNING (OCN-6038): Results tran are not available for /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/ocean_results_phase0_2d5. Use results() for a list of available results.
+WARNING (OCN-6038): Results tran are not available for /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/ocean_results_phase0_2d5. Use results() for a list of available results.
+WARNING (OCN-6038): Results tran are not available for /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/ocean_results_phase0_2d5. Use results() for a list of available results.
+WARNING (OCN-6038): Results tran are not available for /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/ocean_results_phase0_2d5. Use results() for a list of available results.
+*Error* difference: can't handle (nil - nil)
+*Error* load: error while loading file - "/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/validation_generated/phase0/run_phase0_2d5.ocn" at line 66
+> t

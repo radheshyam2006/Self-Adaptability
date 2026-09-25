@@ -1,0 +1,7 @@
+=================================================================
+ STARTING OVERNIGHT RUN: PHASE 0 + PHASE 1
+ Timestamp: Sat Sep 12 01:18:29 IST 2026
+=================================================================
+
+>>> STEP 1: Running Phase 0 Benchmark (2d5 vs 1d8 in parallel)...
+Both benchmark jobs running (PIDs: 32703, 32704). Waiting ~5-8 mins...

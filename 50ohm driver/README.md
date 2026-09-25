@@ -682,9 +682,12 @@ gtkwave waveform.vcd
 ## 12. Project Structure
 
 ```
-mixer/
+50ohm_driver/
 │
 ├── README.md                              ← You are here
+│
+├── data/                                  # Dataset
+│   └── TSMC28nm_DRV_ML_*.xlsx            # Source Cadence simulation data
 │
 ├── ml/                                    # ML Pipeline
 │   ├── visualize_pvt_data.py              # Data exploration (16 plots)
@@ -697,14 +700,24 @@ mixer/
 ├── rtl/                                   # RTL Implementation
 │   ├── tree_traversal_fsm.v               # Reusable FSM engine (core IP)
 │   ├── dt_trim_predictor.v                # Top-level module
+│   ├── dummy_sensors.v                    # PVT sensor stub for simulation
 │   ├── tb_dt_trim_predictor.v             # Testbench (200 vectors + VCD)
 │   ├── pvtp_tree.hex                      # SRAM init: pvtp (789 nodes)
 │   ├── pvtn_tree.hex                      # SRAM init: pvtn (653 nodes)
 │   ├── test_vectors.hex                   # 200 test vectors
-│   └── waveform.vcd                       # Simulation waveform for GTKWave
+│   └── zynq_vio_ila/                      # FPGA integration (Zedboard)
 │
-├── scripts/
-│   └── export_tree_to_rom.py              # Python model → Verilog hex export
+├── netlist/                               # Cadence Netlist & OCEAN scripts
+│   ├── netlist.txt                        # Main Spectre netlist
+│   ├── oceanscript.onc                    # OCEAN script
+│   └── ontimereduction.onc                # On-time reduction script
+│
+├── scripts/                               # Automation & Analysis
+│   ├── export_tree_to_rom.py              # Python model → Verilog hex export
+│   ├── generate_ocean_batch.py            # OCEAN batch generator
+│   ├── auto_sweep.py                      # Automated PVT sweep (SSH)
+│   ├── pvt_sweep.py                       # PVT sweep controller
+│   └── validate_pvt_cadence.py            # PVT validation against Cadence
 │
 ├── plots/                                 # All generated visualization plots
 │   ├── 01 - 10: Data exploration
@@ -712,7 +725,17 @@ mixer/
 │   ├── 13 - 14: Depth sweep & per-corner (3-input)
 │   └── 15 - 16: Final comparison & resistance
 │
-└── TSMC28nm_DRV_ML_*.xlsx                 # Source Cadence simulation data
+├── results/                               # Cadence simulation results
+│   └── results_*_batch*.csv               # Per-corner batch results
+│
+├── references/                            # Reference papers
+│
+├── docs/                                  # Documentation
+│   ├── walkthrough.md                     # Complete setup guide
+│   ├── knowledge.md                       # Virtuoso integration notes
+│   └── Plot_Explanations.md              # Plot explanations
+│
+└── ASIC_Submission/                       # Self-contained ASIC delivery package
 ```
 
 ---

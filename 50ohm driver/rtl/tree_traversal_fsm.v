@@ -29,7 +29,11 @@ module tree_traversal_fsm #(
     input  wire [4:0]              vreg_in,
     input  wire [9:0]              temp_in,
     output reg  [7:0]              trim_out,
-    output reg                     done
+    output reg                     done,
+
+    // SRAM Interface (Externalized for Synthesis)
+    output reg  [ADDR_WIDTH-1:0]   node_addr,
+    input  wire [59:0]             node_data_in
   );
 
   // ----------------------------------------------------------------
@@ -41,26 +45,13 @@ module tree_traversal_fsm #(
 
   reg [1:0] state;
 
-  // ----------------------------------------------------------------
-  // SRAM array
-  // ----------------------------------------------------------------
-  reg [59:0] sram [0:NODE_COUNT-1];
-
-  // Initialize from hex file if provided
-  initial
-  begin
-    if (INIT_FILE != "")
-      $readmemh(INIT_FILE, sram);
-  end
-
   // Registered read data
   reg [59:0] node_data;
-  reg [ADDR_WIDTH-1:0] node_addr;
 
-  // Synchronous read
+  // Synchronous read (registering the external SRAM output)
   always @(posedge clk)
   begin
-    node_data <= sram[node_addr];
+    node_data <= node_data_in;
   end
 
   // ----------------------------------------------------------------

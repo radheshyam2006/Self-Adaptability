@@ -15,13 +15,13 @@ import openpyxl
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
-EXCEL_FILE = os.path.join(PROJECT_DIR,
+EXCEL_FILE = os.path.join(PROJECT_DIR, "data",
     "TSMC28nm_DRV_ML_MAR6_LookUP_Table_Mar20_ML Predictions.xlsx")
 OUTPUT_DIR = os.path.join(PROJECT_DIR, "sweep_output")
 
 # Server paths
 SERVER_USER = "user13"
-SERVER_HOST = "10.2.20.16"
+SERVER_HOST = "10.1.73.18"
 SERVER_RTL_IMPORT = "/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/rtl_import"
 SERVER_SIM_BASE = "/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/simulation/tsmc28_tx_tb/ams/maestro/results/maestro"
 

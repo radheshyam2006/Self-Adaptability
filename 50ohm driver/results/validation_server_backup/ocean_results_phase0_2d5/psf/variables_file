@@ -1,0 +1,40 @@
+HEADER
+"PSFversion" "1.00"
+"Time Stamp" "Sep 12 01:18:48 2026"
+TYPE
+"variable" STRUCT(
+"value" FLOAT DOUBLE
+) PROP( "key" "element" )
+VALUE
+"tem" "variable" ( 18.0 ) PROP( )
+"vreg" "variable" ( 890e-3 ) PROP( )
+"pvt0" "variable" ( 1 ) PROP( )
+"pvt1" "variable" ( 1 ) PROP( )
+"pvt2" "variable" ( 1 ) PROP( )
+"pvt3" "variable" ( 1 ) PROP( )
+"pvt4" "variable" ( 1 ) PROP( )
+"pvt5" "variable" ( 0 ) PROP( )
+"pvt6" "variable" ( 0 ) PROP( )
+"pvt7" "variable" ( 0 ) PROP( )
+"pvt8" "variable" ( 0 ) PROP( )
+"pvt9" "variable" ( 0 ) PROP( )
+"pvt10" "variable" ( 0 ) PROP( )
+"pvt11" "variable" ( 0 ) PROP( )
+"pvt12" "variable" ( 0 ) PROP( )
+"pvt13" "variable" ( 0 ) PROP( )
+"pvtn0" "variable" ( 1 ) PROP( )
+"pvtn1" "variable" ( 1 ) PROP( )
+"pvtn2" "variable" ( 1 ) PROP( )
+"pvtn3" "variable" ( 1 ) PROP( )
+"pvtn4" "variable" ( 1 ) PROP( )
+"pvtn5" "variable" ( 0 ) PROP( )
+"pvtn6" "variable" ( 0 ) PROP( )
+"pvtn7" "variable" ( 0 ) PROP( )
+"pvtn8" "variable" ( 0 ) PROP( )
+"pvtn9" "variable" ( 0 ) PROP( )
+"pvtn10" "variable" ( 0 ) PROP( )
+"pvtn11" "variable" ( 0 ) PROP( )
+"pvtn12" "variable" ( 0 ) PROP( )
+"pvtn13" "variable" ( 0 ) PROP( )
+"temp" "variable" ( 18.0 ) PROP( )
+END

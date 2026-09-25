@@ -2,7 +2,9 @@ import sys, io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 import pandas as pd, numpy as np, pickle, os
 
-EXCEL_FILE = 'TSMC28nm_DRV_ML_MAR6_LookUP_Table_Mar20_ML Predictions.xlsx'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
+EXCEL_FILE = os.path.join(PROJECT_DIR, 'data', 'TSMC28nm_DRV_ML_MAR6_LookUP_Table_Mar20_ML Predictions.xlsx')
 CORNER_SHEETS = {'FF':'FF_vdd_temp','SS':'SS_vdd_test','TT':'TT_vdd_test','FS':'FS_vdd_test','SF':'SF_vdd_test'}
 COL_NAMES = ['Corner','vreg','temperature','PULL_UP_RES','PULL_DN_RES','pmon_cmos_res','pmon_cmos','pvtp_raw','pvtn_raw','PULL_UP_RES_new','PULL_DN_RES_new']
 

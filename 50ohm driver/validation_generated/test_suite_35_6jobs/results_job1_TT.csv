@@ -1,0 +1,6 @@
+test_id,corner,res_type,res_sec,vreg,temp,pmon,pvtp,pvtn,sim_pup,sim_pdn,excel_pup,excel_pdn
+GOOD_01,TT,Standard Resistor Corner,tt_res_bip_dio_disres,0.81,-40.0,248568380,31,31,50.653901,-50.406394,49.33,49.62
+GOOD_02,TT,Standard Resistor Corner,tt_res_bip_dio_disres,0.99,-7.5,371445940,30,30,50.708065,-50.830969,49.68,49.73
+GOOD_03,TT,Standard Resistor Corner,tt_res_bip_dio_disres,0.87,26.0,281834670,31,31,51.493921,-51.347216,50.51,50.26
+GOOD_04,TT,Standard Resistor Corner,tt_res_bip_dio_disres,0.87,59.5,276418580,60,60,51.136482,-51.071101,50.21,49.92
+GOOD_05,TT,Standard Resistor Corner,tt_res_bip_dio_disres,0.99,125.0,325808470,61,60,51.760868,-50.731147,49.92,50.36

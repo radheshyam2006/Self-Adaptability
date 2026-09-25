@@ -31,7 +31,28 @@ module tb_dt_trim_predictor;
   wire        done;
 
   // ----------------------------------------------------------------
-  // DUT instantiation (no cfg ports)
+  // Mock SRAMs for Simulation (Since they are now external to DUT)
+  // ----------------------------------------------------------------
+  wire [9:0] pvtp_sram_addr;
+  reg [59:0] pvtp_sram_data;
+  reg [59:0] pvtp_mem [0:788];
+  
+  wire [9:0] pvtn_sram_addr;
+  reg [59:0] pvtn_sram_data;
+  reg [59:0] pvtn_mem [0:652];
+
+  initial begin
+    $readmemh("pvtp_tree.hex", pvtp_mem);
+    $readmemh("pvtn_tree.hex", pvtn_mem);
+  end
+
+  always @(posedge clk) begin
+    pvtp_sram_data <= pvtp_mem[pvtp_sram_addr];
+    pvtn_sram_data <= pvtn_mem[pvtn_sram_addr];
+  end
+
+  // ----------------------------------------------------------------
+  // DUT instantiation
   // ----------------------------------------------------------------
   dt_trim_predictor #(
                       .PVTP_NODES (789),
@@ -49,7 +70,11 @@ module tb_dt_trim_predictor;
                       .start        (start),
                       .pvtp_out     (pvtp_out),
                       .pvtn_out     (pvtn_out),
-                      .done         (done)
+                      .done         (done),
+                      .pvtp_sram_addr (pvtp_sram_addr),
+                      .pvtp_sram_data (pvtp_sram_data),
+                      .pvtn_sram_addr (pvtn_sram_addr),
+                      .pvtn_sram_data (pvtn_sram_data)
                     );
 
   // ----------------------------------------------------------------

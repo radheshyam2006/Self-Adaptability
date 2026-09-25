@@ -1,0 +1,71 @@
+
+Spectre (R) Circuit Simulator
+Version 20.1.0.231.isr6 64bit -- 2 May 2021
+Copyright (C) 1989-2021 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: user13   Host: eecs-ser2.iiit.ac.in   HostID: 10A1249   PID: 7640
+Memory  available: 21.8719 GB  physical: 66.8145 GB
+Linux   : Red Hat Enterprise Linux Server release 7.9 (Maipo)
+CPU Type: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz
+All processors running at 2400.0 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 ( 16 ),  1 ( 17 ),  2 ( 18 ),  3 ( 19 ),  4 ( 20 )
+                 5 ( 21 ),  6 ( 22 ),  7 ( 23 ),  8 ( 24 ),  9 ( 25 )
+                10 ( 26 ), 11 ( 27 ), 12 ( 28 ), 13 ( 29 ), 14 ( 30 )
+                15 ( 31 )
+        
+System load averages (1min, 5min, 15min) : 30.1 %, 16.0 %, 11.6 %
+Hyperthreading is enabled
+HPC is enabled
+
+
+Simulating `input.scs' on eecs-ser2.iiit.ac.in at 11:45:57 PM, Fri Sep 11, 2026 (process id: 7640).
+Current working directory: /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/simulation/tx_drv_ML/spectre/schematic_seriliazer_top/netlist
+Command line:
+    /home/cadence-2023/SPECTRE201/tools/bin/spectre -64 input.scs  \
+        +escchars +log  \
+        ../../../../../validation/ocean_results/psf/spectre.out  \
+        +inter=mpsc +mpssession=spectre0_792_4 -format psfxl -raw  \
+        ../../../../../validation/ocean_results/psf +aps +lqtimeout 900  \
+        -maxw 5 -maxn 5 -env ade
+spectre pid = 7640
+
+Licensing Information:
+[23:45:57.214482] Configured Lic search path (20.02-p002): 5280@14.139.1.126:5280@10.4.17.157
+
+Licensing Information:
+[23:46:00.420241] Periodic Lic check successful
+
+Loading /home/cadence-2023/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/cadence-2023/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/cadence-2023/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/cadence-2023/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/cadence-2023/SPECTRE201/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/simulation/tx_drv_ML/spectre/schematic_seriliazer_top/netlist/input.scs
+Reading file:  /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2_shrink0d9_embedded_usage.scs
+Reading file:  /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2.scs
+
+Error found by spectre during circuit read-in.
+    ERROR: "input.scs" 13: No section found with name `fs_res_bip_dio_disres' defined in file `/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2_shrink0d9_embedded_usage.scs'.
+
+Time for NDB Parsing: CPU = 2.33519 s, elapsed = 4.9042 s.
+Time accumulated: CPU = 2.59147 s, elapsed = 4.90421 s.
+Peak resident memory used = 143 Mbytes.
+
+Licensing Information:
+Lic Summary:
+[23:46:02.226210] Cdslmd servers:5280@14.139.1.126:5280@10.4.17.157
+[23:46:02.226227] Feature usage summary:
+[23:46:02.226227] Virtuoso_Multi_mode_Simulation
+
+
+Aggregate audit (11:46:02 PM, Fri Sep 11, 2026):
+Time used: CPU = 2.59 s, elapsed = 4.9 s, util. = 52.8%.
+Time spent in licensing: elapsed = 2 s, percentage of total = 40.9%.
+Peak memory used = 143 Mbytes.
+Simulation started at: 11:45:57 PM, Fri Sep 11, 2026, ended at: 11:46:02 PM, Fri Sep 11, 2026, with elapsed time (wall clock): 4.9 s.
+spectre completes with 1 error, 0 warnings, and 0 notices.
+spectre terminated prematurely due to fatal error.

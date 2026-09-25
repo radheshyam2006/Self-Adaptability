@@ -1,0 +1,60 @@
+; run_corners_final.ocn
+simulator('spectre)
+design("tsmc28_tx_tb" "tx_drv_ML" "schematic_seriliazer_top")
+resultsDir("./ocean_results_final")
+
+modelFile( 
+    '("/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" "fsmacro_mos_moscap")
+    '("/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_2d5_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" "ff_res_bip_dio_disres")
+)
+analysis('dc ?saveOppoint t)
+analysis('tran ?stop "500n")
+
+; Default Trim Codes (from your ADE state)
+desVar("pvt0" 0) desVar("pvt1" 0) desVar("pvt2" 1) desVar("pvt3" 1) desVar("pvt4" 0)
+desVar("pvt5" 0) desVar("pvt6" 0) desVar("pvt7" 0) desVar("pvt8" 0) desVar("pvt9" 0)
+desVar("pvt10" 0) desVar("pvt11" 0) desVar("pvt12" 0) desVar("pvt13" 0)
+desVar("pvtn0" 1) desVar("pvtn1" 0) desVar("pvtn2" 1) desVar("pvtn3" 1) desVar("pvtn4" 0)
+desVar("pvtn5" 0) desVar("pvtn6" 0) desVar("pvtn7" 0) desVar("pvtn8" 0) desVar("pvtn9" 0)
+desVar("pvtn10" 0) desVar("pvtn11" 0) desVar("pvtn12" 0) desVar("pvtn13" 0)
+
+envOption('termDirectionMismatch "ignore" 'termMismatch "ignore")
+saveOption( ?infoOptions list(list("modelParameter" "models" "rawfile" "" "" "" t) list("element" "inst" "rawfile" "" "" "" t) list("outputParameter" "output" "rawfile" "" "" "" t) list("designParamVals" "parameters" "rawfile" "" "" "" t) list("primitives" "primitives" "rawfile" "" "" "" t) list("subckts" "subckts" "rawfile" "" "" "" t) list("asserts" "assert" "rawfile" "" "" "" nil) list("extremeinfo" "all" "logfile" "" "yes" "" nil) list("allcap" "allcap" "file" "" "" "" nil) list("<Click_To_Add>" "none" "rawfile" "" "" "" nil) ) )
+
+save('i "/xdrv_p/out")
+
+; The 5 random test cases (Temperature, Vreg)
+tests = list(
+  list("Test1" -40 0.81)
+  list("Test2"   0 0.90)
+  list("Test3"  25 0.99)
+  list("Test4"  80 1.08)
+  list("Test5" 125 1.00)
+)
+
+out_file = outfile("resistance_results_final.csv")
+fprintf(out_file "Test_Case,Temperature,Vreg,pup_Resistance(Ohms),pdn_Resistance(Ohms)\n")
+
+foreach(test tests
+    test_name = nth(0 test)
+    temp_val  = nth(1 test)
+    vreg_val  = nth(2 test)
+    
+    printf("\n>>> Running %s at Temp=%d, Vreg=%f <<<\n" test_name temp_val vreg_val)
+    
+    desVar("tem" temp_val)
+    desVar("vreg" vreg_val)
+    temp(temp_val)
+    
+    run()
+    selectResults('tran)
+    
+    pup_val = average((clip((v("/vdd" ?result "tran") - v("/outn" ?result "tran")) 2e-07 2.5e-07) / clip(i("/xdrv_p/out" ?result "tran") 2e-07 2.5e-07)))
+    pdn_val = (average((clip(v("/outp" ?result "tran") 2e-07 2.5e-07) / clip(i("/xdrv_p/out" ?result "tran") 2e-07 2.5e-07))) * -1)
+    
+    fprintf(out_file "%s, %d, %f, %f, %f\n" test_name temp_val vreg_val pup_val pdn_val)
+    printf("Result for %s -> pup=%f, pdn=%f\n" test_name pup_val pdn_val)
+)
+
+close(out_file)
+printf("\nAll 5 simulations complete! Check resistance_results_final.csv\n")

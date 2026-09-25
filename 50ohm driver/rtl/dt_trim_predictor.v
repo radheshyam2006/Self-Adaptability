@@ -28,7 +28,14 @@ module dt_trim_predictor #(
     input  wire        start,       // Pulse to begin prediction
     output wire [13:0] pvtp_out,    // Predicted pvtp trim code
     output wire [13:0] pvtn_out,    // Predicted pvtn trim code
-    output wire        done         // 1-cycle pulse when BOTH results ready
+    output wire        done,        // 1-cycle pulse when BOTH results ready
+
+    // ---- External SRAM Interface (For Synthesis) ----
+    output wire [ADDR_WIDTH-1:0] pvtp_sram_addr,
+    input  wire [59:0]           pvtp_sram_data,
+    
+    output wire [ADDR_WIDTH-1:0] pvtn_sram_addr,
+    input  wire [59:0]           pvtn_sram_data
   );
 
   // ----------------------------------------------------------------
@@ -52,8 +59,7 @@ module dt_trim_predictor #(
   tree_traversal_fsm #(
                        .NODE_COUNT (PVTP_NODES),
                        .ADDR_WIDTH (ADDR_WIDTH),
-                       .TREE_DEPTH (TREE_DEPTH),
-                       .INIT_FILE  (PVTP_INIT)
+                       .TREE_DEPTH (TREE_DEPTH)
                      ) u_pvtp_tree (
                        .clk         (clk),
                        .rst_n       (rst_n),
@@ -62,7 +68,9 @@ module dt_trim_predictor #(
                        .vreg_in     (vreg_in),
                        .temp_in     (temp_in),
                        .trim_out    (pvtp_8bit),
-                       .done        (done_pvtp)
+                       .done        (done_pvtp),
+                       .node_addr   (pvtp_sram_addr),
+                       .node_data_in(pvtp_sram_data)
                      );
 
   // ----------------------------------------------------------------
@@ -71,8 +79,7 @@ module dt_trim_predictor #(
   tree_traversal_fsm #(
                        .NODE_COUNT (PVTN_NODES),
                        .ADDR_WIDTH (ADDR_WIDTH),
-                       .TREE_DEPTH (TREE_DEPTH),
-                       .INIT_FILE  (PVTN_INIT)
+                       .TREE_DEPTH (TREE_DEPTH)
                      ) u_pvtn_tree (
                        .clk         (clk),
                        .rst_n       (rst_n),
@@ -81,7 +88,9 @@ module dt_trim_predictor #(
                        .vreg_in     (vreg_in),
                        .temp_in     (temp_in),
                        .trim_out    (pvtn_8bit),
-                       .done        (done_pvtn)
+                       .done        (done_pvtn),
+                       .node_addr   (pvtn_sram_addr),
+                       .node_data_in(pvtn_sram_data)
                      );
 
   // ----------------------------------------------------------------

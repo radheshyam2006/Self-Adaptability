@@ -1,0 +1,36 @@
+test_id,corner,res_type,res_sec,vreg,temp,pmon,pvtp,pvtn,sim_pup,sim_pdn,excel_pup,excel_pdn
+GOOD_01,TT,Standard Resistor Corner,tt_res_bip_dio_disres,0.81,-40.0,248568380,31,31,50.653901,-50.406394,49.33,49.62
+GOOD_02,TT,Standard Resistor Corner,tt_res_bip_dio_disres,0.99,-7.5,371445940,30,30,50.708065,-50.830969,49.68,49.73
+GOOD_03,TT,Standard Resistor Corner,tt_res_bip_dio_disres,0.87,26.0,281834670,31,31,51.493921,-51.347216,50.51,50.26
+GOOD_04,TT,Standard Resistor Corner,tt_res_bip_dio_disres,0.87,59.5,276418580,60,60,51.136482,-51.071101,50.21,49.92
+GOOD_05,TT,Standard Resistor Corner,tt_res_bip_dio_disres,0.99,125.0,325808470,61,60,51.760868,-50.731147,49.92,50.36
+GOOD_06,FF,Standard Resistor Corner,ff_res_bip_dio_disres,0.81,-40.0,290279170,13,13,51.409739,-51.569399,50.22,50.3
+GOOD_07,FF,Standard Resistor Corner,ff_res_bip_dio_disres,0.81,-7.0,282846140,14,14,50.797106,-50.779388,49.66,49.51
+GOOD_08,FF,Standard Resistor Corner,ff_res_bip_dio_disres,0.99,25.5,395097330,13,13,51.486729,-51.993843,50.44,50.47
+GOOD_09,FF,Standard Resistor Corner,ff_res_bip_dio_disres,0.95,59.0,358271050,14,14,51.191059,-51.711291,50.37,49.87
+GOOD_10,FF,Standard Resistor Corner,ff_res_bip_dio_disres,0.99,125.0,357828760,15,15,51.572042,-53.361716,51.87,49.77
+GOOD_11,SS,Standard Resistor Corner,ss_res_bip_dio_disres,0.81,-40.0,212091500,249,248,51.776603,-50.012308,49.72,50.15
+GOOD_12,SS,Standard Resistor Corner,ss_res_bip_dio_disres,0.99,-7.5,331344310,243,243,50.977322,-50.946551,50.05,49.97
+GOOD_13,SS,Standard Resistor Corner,ss_res_bip_dio_disres,0.97,25.5,307613840,248,248,50.922643,-50.891108,50.02,49.92
+GOOD_14,SS,Standard Resistor Corner,ss_res_bip_dio_disres,0.99,59.0,308727260,249,248,51.628371,-50.411530,49.63,50.54
+GOOD_15,SS,Standard Resistor Corner,ss_res_bip_dio_disres,0.99,125.0,293837330,250,250,51.180439,-50.747169,50.42,49.71
+GOOD_16,FS,FS Cross Option 1 (FF Res),ff_res_bip_dio_disres,0.81,-40.0,253705610,28,14,53.749735,-47.686203,49.628,49.02
+GOOD_17,FS,FS Cross Option 1 (FF Res),ff_res_bip_dio_disres,0.81,-11.5,250502300,28,14,54.666260,-48.372576,50.504,49.73
+GOOD_18,FS,FS Cross Option 1 (FF Res),ff_res_bip_dio_disres,0.93,25.0,331170490,28,13,54.740474,-48.120467,49.177,51.08
+GOOD_19,FS,FS Cross Option 1 (FF Res),ff_res_bip_dio_disres,0.95,55.0,334869190,28,14,53.902650,-48.639049,50.002,49.98
+GOOD_20,FS,FS Cross Option 1 (FF Res),ff_res_bip_dio_disres,0.99,125.0,338001700,29,14,56.493895,-48.600575,51.628,50.99
+GOOD_21,FS,FS Cross Option 2 (SS Res),ss_res_bip_dio_disres,0.81,-40.0,253705610,28,14,66.074069,-59.493705,49.628,49.02
+GOOD_22,FS,FS Cross Option 2 (SS Res),ss_res_bip_dio_disres,0.81,-11.5,250502300,28,14,67.068321,-60.250316,50.504,49.73
+GOOD_23,FS,FS Cross Option 2 (SS Res),ss_res_bip_dio_disres,0.93,25.0,331170490,28,13,67.707847,-60.104777,49.177,51.08
+GOOD_24,FS,FS Cross Option 2 (SS Res),ss_res_bip_dio_disres,0.95,55.0,334869190,28,14,66.609947,-60.702562,50.002,49.98
+GOOD_25,FS,FS Cross Option 2 (SS Res),ss_res_bip_dio_disres,0.99,125.0,338001700,29,14,69.583870,-60.537751,51.628,50.99
+GOOD_26,SF,SF Cross Option 1 (SS Res),ss_res_bip_dio_disres,0.81,-40.0,241869650,62,123,49.885536,-53.048637,50.113,49.848
+GOOD_27,SF,SF Cross Option 1 (SS Res),ss_res_bip_dio_disres,0.97,-7.5,345124630,122,123,49.382131,-52.138249,49.6,49.95
+GOOD_28,SF,SF Cross Option 1 (SS Res),ss_res_bip_dio_disres,0.81,26.0,233790580,124,125,49.209155,-52.610274,50.54,50.425
+GOOD_29,SF,SF Cross Option 1 (SS Res),ss_res_bip_dio_disres,0.93,59.0,299747820,123,125,48.877768,-53.207122,50.23,49.827
+GOOD_30,SF,SF Cross Option 1 (SS Res),ss_res_bip_dio_disres,0.99,125.0,312833150,123,125,49.859693,-55.500410,51.49,51.13
+GOOD_31,SF,SF Cross Option 2 (FF Res),ff_res_bip_dio_disres,0.81,-40.0,241869650,62,123,39.974231,-42.912345,50.113,49.848
+GOOD_32,SF,SF Cross Option 2 (FF Res),ff_res_bip_dio_disres,0.97,-7.5,345124630,122,123,39.384342,-41.898773,49.6,49.95
+GOOD_33,SF,SF Cross Option 2 (FF Res),ff_res_bip_dio_disres,0.81,26.0,233790580,124,125,39.592648,-42.765496,50.54,50.425
+GOOD_34,SF,SF Cross Option 2 (FF Res),ff_res_bip_dio_disres,0.93,59.0,299747820,123,125,39.185044,-42.998570,50.23,49.827
+GOOD_35,SF,SF Cross Option 2 (FF Res),ff_res_bip_dio_disres,0.99,125.0,312833150,123,125,40.074040,-44.879426,51.49,51.13

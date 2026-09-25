@@ -1,0 +1,2 @@
+Corner,Voltage_V,Temp_C,Ring_Osc_Freq_PMON_Hz,Initial_Pup_Raw_Ohm,Initial_Pdn_Raw_Ohm,Ground_Truth_PVTP_Int,Ground_Truth_PVTP_Bits,Ground_Truth_PVTN_Int,Ground_Truth_PVTN_Bits,Ground_Truth_Target_Pup_Ohm,Ground_Truth_Target_Pdn_Ohm,ML_Predicted_PVTP_Int,ML_Predicted_PVTP_Bits,ML_Predicted_PVTN_Int,ML_Predicted_PVTN_Bits,PVTP_Trim_Error_LSB,PVTN_Trim_Error_LSB,Trim_Match_Status,Dataset_Partition,Simulated_Pup_Ohm,Simulated_Pdn_Ohm
+SF,0.97,40.0,326636830,54.5,56.21,123,01111011,125,01111101,49.54,49.03,31,00011111,125,01111101,92,0,"Mismatch (P:92, N:0)",TrainingSet,,

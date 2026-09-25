@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"tsmc28_tx_tb\" \"tx_drv_ML\" \"schematic_seriliazer_top\" \"\")"
+"simulator" "spectre"
+"temperature" "18.0"
+"host" ""
+"date" "Sep 11 23:45:55 2026"
+"title" ""
+"analysisList" "()"
+END

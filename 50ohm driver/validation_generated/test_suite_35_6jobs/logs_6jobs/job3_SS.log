@@ -1,0 +1,259 @@
+*WARNING* file /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/CDS.log File is already locked by some other process.
+*WARNING* file /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/CDS.log.1 File is already locked by some other process.
+*WARNING* file /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/CDS.log.2 File is already locked by some other process.
+COPYRIGHT (C) 1992-2021  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+          (C) 1992-2021  UNIX SYSTEMS Laboratories INC.,
+                         Reproduced with permission.
+
+This Cadence Design Systems program and online documentation are
+proprietary/confidential information and may be disclosed/used only
+as authorized in a license agreement controlling such use and disclosure.
+
+          RESTRICTED RIGHTS NOTICE (SHORT FORM)
+Use/reproduction/disclosure is subject to restriction
+set forth at FAR 1252.227-19 or its equivalent.
+Loading geView.cxt 
+Loading menuBuilder.cxt 
+Loading schView.cxt 
+Loading selectSv.cxt 
+Loading pvsui.cxt
+Loading wireEdit.cxt 
+Loading pte2.cxt 
+Loading xlUI.cxt 
+Loading auCore.cxt 
+Loading vhdl.cxt 
+Loading seismic.cxt 
+Loading ci.cxt 
+Loading ams.cxt 
+Loading adexlDM.cxt 
+Loading cpf.cxt 
+Loading cli.cxt 
+Loading lp.cxt 
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 2.05s.
+*WARNING* LIB basic from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 3 redefines
+LIB basic from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE basic
+before DEFINE basic
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE basic
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* LIB analogLib from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 4 redefines
+LIB analogLib from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE analogLib
+before DEFINE analogLib
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE analogLib
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* LIB test from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 7 redefines
+LIB test from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE test
+before DEFINE test
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE test
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* The directory: '/home/cadence-2023/IC618/tools.lnx86/affirma_ams/etc/connect_lib/connectLib' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'connectLib'.
+*WARNING* The directory: '/home/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/test' does not exist
+	but was defined in libFile '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib' for Lib 'test'.
+*WARNING* The directory: '/home/cad/IC617/tools.lnx86/dfII/etc/cdsDefTechLib' does not exist
+	but was defined in libFile '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib' for Lib 'cdsDefTechLib'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/oscillator_self_heal' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'oscillator_self_heal'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/ldo_self_heal' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'ldo_self_heal'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/Final_Self_Healing' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'Final_Self_Healing'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/Abhishek_pv' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'Abhishek_pv'.
+> t
+> > > > > Loading oasis.cxt 
+Loading dal.cxt 
+Loading awv.cxt 
+Loading vdsil.cxt 
+*Error* parser: interrupted while reading input
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> > > WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> > WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> > nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> > port:"results_job3_SS.csv"
+> t
+> t
+> > > 
+>>> [JOB 3: SS] Running Sim 1/5: GOOD_11 (SS, ss_res_bip_dio_disres) V=0.81V, T=-40.0C <<<
+t
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6004): The ocean session was not created. In order to proceed create the
+        session by setting simulator using the following command:
+        simulator('simulator_name).
+nil
+> WARNING (OCN-6034): You need to specify what results you want to look at before using this command.
+        You can do this with the openResults() command. For more information type,
+        ocnHelp('openResults) in the Command Interface Window (CIW).
+nil
+> Loading socket.cxt 
+Loading analog.cxt 
+Loading par.cxt 
+Loading asimenv.cxt 
+Loading alvs.cxt 
+Loading caa.cxt 
+Loading amps.cxt 
+Loading adexlCore.cxt 
+Loading adexl.cxt 
+Loading lx.cxt 
+Loading lce.cxt 
+Loading le.cxt 
+IO Error 0 (Success) on Display ":4473" at UTC 2026.09.15 18:17:18.547
+Aborting due to fatal X IO error.
+*WARNING* Process was terminated with SIGABRT signal
+Local time (crash) Tuesday 15 September 2026, 11:47:18 PM

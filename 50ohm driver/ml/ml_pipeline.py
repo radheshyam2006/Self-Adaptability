@@ -36,8 +36,10 @@ except ImportError:
     HAS_TORCH = False
     print("[WARNING] PyTorch not found. Skipping NN model. Install: pip install torch")
 
-EXCEL_FILE = r"TSMC28nm_DRV_ML_MAR6_LookUP_Table_Mar20_ML Predictions.xlsx"
-OUTPUT_DIR = r"plots"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
+EXCEL_FILE = os.path.join(PROJECT_DIR, "data", "TSMC28nm_DRV_ML_MAR6_LookUP_Table_Mar20_ML Predictions.xlsx")
+OUTPUT_DIR = os.path.join(PROJECT_DIR, "plots")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 CORNER_SHEETS = {'FF': 'FF_vdd_temp', 'SS': 'SS_vdd_test', 'TT': 'TT_vdd_test',

@@ -1,0 +1,87 @@
+*WARNING* file /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/CDS.log File is already locked by some other process.
+*WARNING* file /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/CDS.log.1 File is already locked by some other process.
+*WARNING* file /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/CDS.log.2 File is already locked by some other process.
+*WARNING* file /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/CDS.log.3 File is already locked by some other process.
+*WARNING* file /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/CDS.log.4 File is already locked by some other process.
+*WARNING* file /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/CDS.log.5 File is already locked by some other process.
+COPYRIGHT (C) 1992-2021  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+          (C) 1992-2021  UNIX SYSTEMS Laboratories INC.,
+                         Reproduced with permission.
+
+This Cadence Design Systems program and online documentation are
+proprietary/confidential information and may be disclosed/used only
+as authorized in a license agreement controlling such use and disclosure.
+
+          RESTRICTED RIGHTS NOTICE (SHORT FORM)
+Use/reproduction/disclosure is subject to restriction
+set forth at FAR 1252.227-19 or its equivalent.
+Loading geView.cxt 
+Loading menuBuilder.cxt 
+Loading schView.cxt 
+Loading selectSv.cxt 
+Loading pvsui.cxt
+
+IO Error 13 (Permission denied) during exit at UTC 2026.09.15 18:17:12.667
+Aborting due to fatal X IO error.
+*WARNING* Process was terminated with SIGABRT signal
+Local time (crash) Tuesday 15 September 2026, 11:47:12 PM
+libvirtuos_sh.so:voStackTrace+58()
+virtuoso:dbPanic+444()
+libvirtuos_sh.so:voDoAbortFuncs+116()
+libvirtuos_sh.so:voSigAbortInfo+255()
+libpthread.so.0:__restore_rt+0()
+libc.so.6:gsignal+55()
+libc.so.6:abort+328()
+libc.so.6:__libc_message+983()
+libc.so.6:_int_free+1305()
+libvirtuos_sh.so:mopShutdown+716()
+libvirtuos_sh.so:voExit+16()
+virtuoso:gliXIOErrorHandler+811()
+libX11.so.6:_XIOError+78()
+libX11.so.6:_XReply+987()
+libX11.so.6:XSync+77()
+libX11.so.6:XCloseDisplay+128()
+libcdsQt5XcbQpa.so.5:_ZN14QXcbConnectionD1Ev+511()
+libcdsQt5XcbQpa.so.5:_ZN14QXcbConnectionD0Ev+9()
+libcdsQt5XcbQpa.so.5:_ZN15QXcbIntegrationD1Ev+70()
+libcdsQt5XcbQpa.so.5:_ZN15QXcbIntegrationD0Ev+9()
+libcdsQt5Gui.so.5:_ZN22QGuiApplicationPrivateD1Ev+387()
+libcdsQt5Widgets.so.5:_ZN19QApplicationPrivateD0Ev+9()
+libcdsQt5Core.so.5:_ZN7QObjectD1Ev+1639()
+libcdsQt5Core.so.5:_ZN16QCoreApplicationD1Ev+294()
+libcdsQt5Widgets.so.5:_ZN12QApplicationD1Ev+929()
+virtuoso:_ZN14HiQApplicationD0Ev+62()
+virtuoso:hiiExit+1894()
+libvirtuos_sh.so:voExit2+60()
+libvirtuos_sh.so:voExitFuncs+55()
+libvirtuos_sh.so:voExit+16()
+libil_sh.so:ilExit+499()
+libil_sh.so:ilSignalHandler+79()
+libc.so.6:__restore_rt+0()
+libc.so.6:__select+51()
+libsman_sh.so:smnStreamSubLoop+1345()
+libcdsIlIpc_sh.so:_Z15_ipcTimeoutLoopj+309()
+libcdsIlIpc_sh.so:ipcxWait+342()
+libil_sh.so:iliVcodeEval2C+32815()
+libil_sh.so:iliVcodeEval2+71()
+libil_sh.so:ilxSkillEval2+224()
+libil_sh.so:iliLoadPort+634()
+libil_sh.so:iliVcodeEval2C+32815()
+libil_sh.so:iliVcodeEval2+71()
+libil_sh.so:ilxSkillEval2+224()
+libil_sh.so:_ilTopLevelSet+167()
+virtuoso:pvsInit+1836()
+libil_sh.so:iliVcodeEval2C+33046()
+libil_sh.so:iliVcodeEval2+71()
+libil_sh.so:ilxSkillEval2+224()
+libil_sh.so:iliLoadPort+634()
+libil_sh.so:iliVcodeEval2C+32815()
+libil_sh.so:iliVcodeEval2+71()
+libil_sh.so:ilxSkillEval2+224()
+libil_sh.so:_ilTopLevelSet+167()
+libil_sh.so:ilxTopLevelCmd+219()
+libil_sh.so:ilLoadCapContext+525()
+libil_sh.so:iliInitClients+1479()
+virtuoso:main+309()
+libc.so.6:__libc_start_main+245()
+virtuoso:_start+41()

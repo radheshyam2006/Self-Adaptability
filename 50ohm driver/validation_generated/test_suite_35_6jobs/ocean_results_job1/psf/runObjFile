@@ -1,0 +1,28 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Sep 16 00:00:42 2026"
+"simulator" "spectre"
+"date" "Sep 16 00:00:42 2026"
+ "externalSweepVariableCount" 0
+"#maeTestName" ""
+"#maeHistoryName" ""
+"#maeCorner" "nom"
+ "#maeDesignPoint" -1
+"netlistDir" "../../../../simulation/tx_drv_ML/spectre/schematic_seriliazer_top/netlist"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Run1" "runObject" (
+(
+"logFile"
+"artistLogFile"
+)
+""
+()
+)
+END

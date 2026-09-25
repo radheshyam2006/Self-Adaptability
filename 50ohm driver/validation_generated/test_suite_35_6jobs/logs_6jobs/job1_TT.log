@@ -1,0 +1,1918 @@
+COPYRIGHT (C) 1992-2021  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+          (C) 1992-2021  UNIX SYSTEMS Laboratories INC.,
+                         Reproduced with permission.
+
+This Cadence Design Systems program and online documentation are
+proprietary/confidential information and may be disclosed/used only
+as authorized in a license agreement controlling such use and disclosure.
+
+          RESTRICTED RIGHTS NOTICE (SHORT FORM)
+Use/reproduction/disclosure is subject to restriction
+set forth at FAR 1252.227-19 or its equivalent.
+Loading geView.cxt 
+Loading menuBuilder.cxt 
+Loading schView.cxt 
+Loading selectSv.cxt 
+Loading pvsui.cxt
+Loading wireEdit.cxt 
+Loading pte2.cxt 
+Loading xlUI.cxt 
+Loading auCore.cxt 
+Loading vhdl.cxt 
+Loading seismic.cxt 
+Loading ci.cxt 
+Loading ams.cxt 
+Loading adexlDM.cxt 
+Loading cpf.cxt 
+Loading cli.cxt 
+Loading lp.cxt 
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 1.34s.
+*WARNING* LIB basic from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 3 redefines
+LIB basic from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE basic
+before DEFINE basic
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE basic
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* LIB analogLib from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 4 redefines
+LIB analogLib from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE analogLib
+before DEFINE analogLib
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE analogLib
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* LIB test from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 7 redefines
+LIB test from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE test
+before DEFINE test
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE test
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* The directory: '/home/cadence-2023/IC618/tools.lnx86/affirma_ams/etc/connect_lib/connectLib' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'connectLib'.
+*WARNING* The directory: '/home/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/test' does not exist
+	but was defined in libFile '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib' for Lib 'test'.
+*WARNING* The directory: '/home/cad/IC617/tools.lnx86/dfII/etc/cdsDefTechLib' does not exist
+	but was defined in libFile '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib' for Lib 'cdsDefTechLib'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/oscillator_self_heal' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'oscillator_self_heal'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/ldo_self_heal' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'ldo_self_heal'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/Final_Self_Healing' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'Final_Self_Healing'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/Abhishek_pv' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'Abhishek_pv'.
+> t
+> > > > > Loading oasis.cxt 
+Loading dal.cxt 
+Loading awv.cxt 
+Loading vdsil.cxt 
+Loading analog.cxt 
+Loading asimenv.cxt 
+Loading spectrei.cxt 
+Loading socket.cxt 
+Loading par.cxt 
+Loading alvs.cxt 
+Loading caa.cxt 
+Loading amps.cxt 
+Loading adexlCore.cxt 
+Loading adexl.cxt 
+Loading lx.cxt 
+Loading lce.cxt 
+Loading le.cxt 
+Loading rte.cxt 
+Loading te.cxt 
+Loading schHDL.cxt 
+Loading devCheck.cxt 
+Loading relXpert.cxt 
+Loading simui.cxt 
+spectre
+> *WARNING* LIB basic from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 3 redefines
+LIB basic from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE basic
+before DEFINE basic
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE basic
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* LIB analogLib from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 4 redefines
+LIB analogLib from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE analogLib
+before DEFINE analogLib
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE analogLib
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* LIB test from File /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib Line 7 redefines
+LIB test from File /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+Insert UNDEFINE test
+before DEFINE test
+    in /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib
+Or remove or comment out DEFINE test
+    in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib
+to suppress this warning message.
+*WARNING* The directory: '/home/cadence-2023/IC618/tools.lnx86/affirma_ams/etc/connect_lib/connectLib' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'connectLib'.
+*WARNING* The directory: '/home/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/test' does not exist
+	but was defined in libFile '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib' for Lib 'test'.
+*WARNING* The directory: '/home/cad/IC617/tools.lnx86/dfII/etc/cdsDefTechLib' does not exist
+	but was defined in libFile '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/cds.lib' for Lib 'cdsDefTechLib'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/oscillator_self_heal' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'oscillator_self_heal'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/ldo_self_heal' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'ldo_self_heal'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/Final_Self_Healing' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'Final_Self_Healing'.
+*WARNING* The directory: '/home/user2/work/work_tsmc180/Abhishek_pv' does not exist
+	but was defined in libFile '/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/cds.lib' for Lib 'Abhishek_pv'.
+Initializing from libInit.il for library tsmcN28...
+   --  load_apc_tsmc_n28.il
+   --  apc_util.cdn
+   --  tsmcN28.pce
+   --  cniUtils_encrypted.il
+   --  tsmcPdkParamTable.il
+   --  tsmcLDEparamTable.il
+   --  tsmcN28_CB_1.cxt
+   --  tsmcN28Tool.cxt
+   --  tsmcN28_updateCDFs.cxt
+   --  tsmcN28_gateCB.cxt
+   --  tsmcN28_CB_3.cxt
+   --  tsmcN28_tif.cxt
+   --  tsmc_LDE.cxt
+   --  tsmcSim_cdf_api.cxt
+   --  tsmcN28.cxt
+   --  tsmcN28_CB_2.cxt
+   --  metalRES.cxt
+   --  tsmcDNA_utility.cxt
+   --  tsmcN28_CB_4.cxt
+Loading hspiceD.cxt 
+Loading spectreinl.cxt 
+Loading msgHandler.cxt 
+Loading UltraSim.cxt 
+Loading AMSOSS.cxt 
+Loading AMS.cxt 
+Loading PDK Display File '/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/tsmcN28/../display.drf'
+(tsmc28_tx_tb tx_drv_ML schematic_seriliazer_top)
+> "./ocean_results_job1"
+> > > (("/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_1d8_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" "ttmacro_mos_moscap") 
+    ("/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_1d8_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" "tt_res_bip_dio_disres") 
+    ("/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_1d8_elk_v1d0_2p2_shrink0d9_embedded_usage.scs" "pre_simu")
+)
+> > t
+> "275n"
+> > "ignore"
+> (("modelParameter" "models" "rawfile" "" ""
+	"" t
+    ) 
+    ("element" "inst" "rawfile" "" ""
+	"" t
+    ) 
+    ("outputParameter" "output" "rawfile" "" ""
+	"" t
+    ) 
+    ("designParamVals" "parameters" "rawfile" "" ""
+	"" t
+    ) 
+    ("primitives" "primitives" "rawfile" "" ""
+	"" t
+    )
+    ("subckts" "subckts" "rawfile" "" ""
+	"" t
+    ) 
+    ("asserts" "assert" "rawfile" "" ""
+	"" nil
+    ) 
+    ("extremeinfo" "all" "logfile" "" "yes"
+	"" nil
+    ) 
+    ("allcap" "allcap" "file" "" ""
+	"" nil
+    ) 
+    ("<Click_To_Add>" "none" "rawfile" "" ""
+	"" nil
+    )
+)
+> "/xdrv_p/out"
+> > port:"results_job1_TT.csv"
+> t
+> t
+> > > 
+>>> [JOB 1: TT] Running Sim 1/5: GOOD_01 (TT, tt_res_bip_dio_disres) V=0.81V, T=-40.0C <<<
+t
+> "-40.0"
+> "0.81"
+> "-40.0"
+> "1"
+> "1"
+> "1"
+> "1"
+> "1"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "1"
+> "1"
+> "1"
+> "1"
+> "1"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> Delete psf data in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/test_suite_35_6jobs/ocean_results_job1/psf.
+Loading seCore.cxt 
+Begin Incremental Netlisting Sep 15 23:59:04 2026
+End netlisting Sep 15 23:59:04 2026
+Loading monte.cxt 
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+
+Spectre (R) Circuit Simulator
+Version 20.1.0.231.isr6 64bit -- 2 May 2021
+Copyright (C) 1989-2021 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence and Spectre are registered trademarks of Cadence
+        Design Systems, Inc. All others are the property of their respective
+        holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: user13   Host: eecs-ser2.iiit.ac.in   HostID: 10A1249   PID: 28897
+Memory  available: 16.2479 GB  physical: 66.8145 GB
+Linux   : Red Hat Enterprise Linux Server release 7.9 (Maipo)
+CPU Type: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz
+All processors running at 2400.0 MHz
+        Socket: Processors (Hyperthreaded Processor)
+        0:       0 ( 16 ),  1 ( 17 ),  2 ( 18 ),  3 ( 19 ),  4 ( 20 )
+                 5 ( 21 ),  6 ( 22 ),  7 ( 23 ),  8 ( 24 ),  9 ( 25 )
+                10 ( 26 ), 11 ( 27 ), 12 ( 28 ), 13 ( 29 ), 14 ( 30 )
+                15 ( 31 )
+        
+System load averages (1min, 5min, 15min) : 7.5 %, 15.7 %, 26.2 %
+Hyperthreading is enabled
+HPC is enabled
+
+
+Simulating `input.scs' on eecs-ser2.iiit.ac.in at 11:59:05 PM, Tue Sep 15, 2026
+        (process id: 28897).
+Current working directory:
+        /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/simulation/tx_drv_ML/spectre/schematic_seriliazer_top/netlist
+Command line:
+    /home/cadence-2023/SPECTRE201/tools/bin/spectre -64 input.scs  \
+        +escchars +log  \
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/spectre.out
+        \
+        +inter=mpsc +mpssession=spectre0_23282_1 -format psfxl -raw  \
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf 
+        \
+        +aps +lqtimeout 900 -maxw 5 -maxn 5 -env ade
+Licensing Information:
+[23:59:05.214466] Configured Lic search path (20.02-p002):
+        5280@14.139.1.126:5280@10.4.17.157
+
+Licensing Information:
+[23:59:24.124483] Periodic Lic check successful
+
+Reading file: 
+        /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/simulation/tx_drv_ML/spectre/schematic_seriliazer_top/netlist/input.scs
+Reading file: 
+        /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_1d8_elk_v1d0_2p2_shrink0d9_embedded_usage.scs
+Reading file: 
+        /data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_1d8_elk_v1d0_2p2.scs
+Time for NDB Parsing: CPU = 2.78326 s, elapsed = 22.2904 s.
+Time accumulated: CPU = 2.91827 s, elapsed = 22.2904 s.
+Peak resident memory used = 152 Mbytes.
+
+Reading link: 
+        /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file: 
+        /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link: 
+        /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file: 
+        /home/cadence-2023/SPECTRE201/tools.lnx86/spectre/etc/ahdl/constants.vams
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-1131): Scope option `scalefactor' specified with scope
+        `TopCircuit' at line `193' has also been specified at line `1240' in
+        file
+        `/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_1d8_elk_v1d0_2p2_shrink0d9_embedded_usage.scs'.
+        As a result, the last specified value will be used for simulation.
+    WARNING (SFE-1131): Scope option `scalefactor' specified with scope
+        `TopCircuit' at line `1240' has also been specified at line `9' in file
+        `/data/cad/pdk_all/pdk_tsmc/pdk_tsmc_28/PDK/TSMC_new_iPDK/models/spectre/crn28hpcp_1d8_elk_v1d0_2p2_shrink0d9_embedded_usage.scs'.
+        As a result, the last specified value will be used for simulation.
+
+Existing shared object for module bsource_c73fd1 is up to date.
+Installed compiled interface for bsource_c73fd1.
+Existing shared object for module bsource_rupoly1_e3f928 is up to date.
+Installed compiled interface for bsource_rupoly1_e3f928.
+Existing shared object for module bsource_rupoly2_c704ac is up to date.
+Installed compiled interface for bsource_rupoly2_c704ac.
+Existing shared object for module bsource_d18ee1 is up to date.
+Installed compiled interface for bsource_d18ee1.
+Time for Elaboration: CPU = 455.105 ms, elapsed = 456.176 ms.
+Time accumulated: CPU = 3.37349 s, elapsed = 22.7466 s.
+Peak resident memory used = 192 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+
+
+Time for EDB Visiting: CPU = 154.011 ms, elapsed = 154.378 ms.
+Time accumulated: CPU = 3.52762 s, elapsed = 22.9011 s.
+Peak resident memory used = 207 Mbytes.
+
+
+Global user options:
+         psfversion = 1.4.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = -40
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile =
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/sens.output
+     checklimitdest = psf
+               save = allpub
+        scalefactor = 0.9
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 2640
+             iprobe 1     
+              bsim4 4242  
+     bsource_c73fd1 56    
+     bsource_d18ee1 56    
+bsource_rupoly1_e3f928 112   
+bsource_rupoly2_c704ac 224   
+          capacitor 356   
+           resistor 2     
+            vsource 32    
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 8     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+
+Notice from spectre during initial setup.
+    APS enabled.
+    Multithreading enabled: 8 threads in the system with 32 available
+        processors.
+
+Time for parsing: CPU = 192.376 ms, elapsed = 1.2515 s.
+Time accumulated: CPU = 3.72011 s, elapsed = 24.1527 s.
+Peak resident memory used = 224 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0,
+        spectre0_23282_1, ).
+simulate...
+Spectre Control Language log file is `input.scllog'.
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 275 ns)
+*************************************************
+DC simulation time: CPU = 175.363 ms, elapsed = 56.0381 ms.
+
+Opening the PSFXL file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/tran.tran.tran
+        ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 275 ns
+    step = 275 ps
+    maxstep = 5.5 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = -40 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+
+
+Output and IC/nodeset summary:
+                 save   33      (current)
+                 save   2640    (voltage)
+
+
+Notice from spectre at time = 3.07291 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.09054 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.12375 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.1866 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.30714 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+    tran: time = 9.531 ns    (3.47 %), step = 3.095 ns     (1.13 %)
+    tran: time = 20.69 ns    (7.52 %), step = 134.2 ps    (48.8 m%)
+    tran: time = 34.51 ns    (12.5 %), step = 270.5 ps    (98.4 m%)
+    tran: time = 48.14 ns    (17.5 %), step = 35.4 ps     (12.9 m%)
+    tran: time = 61.88 ns    (22.5 %), step = 26.42 ps    (9.61 m%)
+    tran: time = 75.64 ns    (27.5 %), step = 32.43 ps    (11.8 m%)
+    tran: time = 89.38 ns    (32.5 %), step = 37.23 ps    (13.5 m%)
+    tran: time = 103.2 ns    (37.5 %), step = 45.34 ps    (16.5 m%)
+    tran: time = 116.9 ns    (42.5 %), step = 51.08 ps    (18.6 m%)
+    tran: time = 130.6 ns    (47.5 %), step = 36.9 ps     (13.4 m%)
+    tran: time = 144.4 ns    (52.5 %), step = 42.62 ps    (15.5 m%)
+    tran: time = 158.1 ns    (57.5 %), step = 18.4 ps     (6.69 m%)
+    tran: time = 171.9 ns    (62.5 %), step = 36.79 ps    (13.4 m%)
+    tran: time = 185.6 ns    (67.5 %), step = 35.53 ps    (12.9 m%)
+    tran: time = 199.4 ns    (72.5 %), step = 34.5 ps     (12.5 m%)
+    tran: time = 213.2 ns    (77.5 %), step = 36.06 ps    (13.1 m%)
+    tran: time = 226.9 ns    (82.5 %), step = 53.12 ps    (19.3 m%)
+    tran: time = 240.6 ns    (87.5 %), step = 41.33 ps      (15 m%)
+    tran: time = 254.4 ns    (92.5 %), step = 45.35 ps    (16.5 m%)
+    tran: time = 268.1 ns    (97.5 %), step = 34.03 ps    (12.4 m%)
+Number of accepted tran steps =             7525
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I82.I0.M3:int_g) = 895.1 mV
+I: I(V0:p) = 4.155 mA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (11.2 %)      1 (9.4 %)       2 (100.0 %)     3 (10.6 %)
+         4 (25.0 %)      5 (18.2 %)      6 (11.6 %)      7 (12.9 %)
+         8 (18.2 %)      9 (13.6 %)     10 (14.2 %)     11 (19.4 %)
+        12 (15.2 %)     13 (12.6 %)     14 (9.5 %)      15 (19.1 %)
+        16 (3.4 %)      17 (1.8 %)      19 (11.0 %)     20 (1.3 %)
+        22 (2.3 %)      23 (1.2 %)      24 (1.4 %)      25 (1.2 %)
+        26 (1.7 %)      27 (3.4 %)      28 (1.2 %)      29 (5.3 %)
+        30 (2.3 %)      31 (2.3 %)      
+        Total: 361.3%
+Initial condition solution time: CPU = 175.56 ms, elapsed = 56.1399 ms.
+Intrinsic tran analysis time:    CPU = 70.8351 s, elapsed = 9.60803 s.
+Total time required for tran analysis `tran': CPU = 71.0364 s (1m  11.0s),
+        elapsed = 9.68035 s.
+Time accumulated: CPU = 75.7478 s (1m  15.7s), elapsed = 34.7664 s.
+Peak resident memory used = 575 Mbytes.
+
+
+Notice from spectre.
+    4 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/finalTimeOP.info
+        ...
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/dcOp.dc
+        ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = -40 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+Trying `homotopy = gmin'.
+
+Notice from spectre during DC analysis `dcOp'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is
+        recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xdrv_n.I0.I8.M4:int_g) = 810 mV
+I: I(V22:p) = 4.067 mA
+Convergence achieved in 272 iterations.
+DC simulation time: CPU = 3.9541 s, elapsed = 505.879 ms.
+Total time required for dc analysis `dcOp': CPU = 3.95481 s, elapsed = 505.97
+        ms.
+Time accumulated: CPU = 80.4019 s (1m  20.4s), elapsed = 35.3606 s.
+Peak resident memory used = 576 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/dcOpInfo.info
+        ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/modelParameter.info
+        ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/element.info
+        ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/outputParameter.info
+        ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/designParamVals.info
+        ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/primitives.info.primitives
+        ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/subckts.info.subckts
+        ...
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+Loading viva.cxt 
+      ...successful.
+"/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/test_suite_35_6jobs/ocean_results_job1"
+> stdobj@0x2ac5bbd8
+> 50.6539
+> -50.40639
+> t
+> t
+> Result GOOD_01 -> pup=50.653901, pdn=-50.406394 (Target: pup=49.33, pdn=49.62)
+t
+> > > 
+>>> [JOB 1: TT] Running Sim 2/5: GOOD_02 (TT, tt_res_bip_dio_disres) V=0.99V, T=-7.5C <<<
+t
+> "-7.5"
+> "0.99"
+> "-7.5"
+> "0"
+> "1"
+> "1"
+> "1"
+> "1"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "1"
+> "1"
+> "1"
+> "1"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> Delete psf data in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/test_suite_35_6jobs/ocean_results_job1/psf.
+Begin Incremental Netlisting Sep 15 23:59:41 2026
+End netlisting Sep 15 23:59:41 2026
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+simulate...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+        Further occurrences of this warning will be suppressed.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 275 ns)
+*************************************************
+DC simulation time: CPU = 454.058 ms, elapsed = 57.3392 ms.
+
+Opening the PSFXL file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/tran.tran.tran
+        ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 275 ns
+    step = 275 ps
+    maxstep = 5.5 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = -7.5 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+
+
+Output and IC/nodeset summary:
+                 save   33      (current)
+                 save   2640    (voltage)
+
+
+Warning from spectre at time = 3.00042 ns during transient analysis `tran'.
+    WARNING (CMI-2751): I21.M0: Vds(=-992.099 mV) has exceeded vds_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2755): I21.M0: Vbd(=992.099 mV) has exceeded vbd_max(=990 mV).
+        Check and update the settings of the SOA-related model parameters and
+        terminal bias of the instance
+Warning from spectre at time = 3.00125 ns during transient analysis `tran'.
+    WARNING (CMI-2751): I21.M0: Vds(=-995.178 mV) has exceeded vds_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2755): I21.M0: Vbd(=995.178 mV) has exceeded vbd_max(=990 mV).
+        Check and update the settings of the SOA-related model parameters and
+        terminal bias of the instance
+Warning from spectre at time = 3.00292 ns during transient analysis `tran'.
+    WARNING (CMI-2751): I21.M0: Vds(=-996.145 mV) has exceeded vds_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2755): I21.M0: Vbd(=996.145 mV) has exceeded vbd_max(=990 mV).
+        Check and update the settings of the SOA-related model parameters and
+        terminal bias of the instance
+Warning from spectre at time = 3.00449 ns during transient analysis `tran'.
+    WARNING (CMI-2751): I21.M0: Vds(=-996.044 mV) has exceeded vds_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2755): I21.M0: Vbd(=996.044 mV) has exceeded vbd_max(=990 mV).
+        Check and update the settings of the SOA-related model parameters and
+        terminal bias of the instance
+Warning from spectre at time = 3.00659 ns during transient analysis `tran'.
+    WARNING (CMI-2751): I21.M0: Vds(=-996.439 mV) has exceeded vds_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+        Further occurrences of this warning will be suppressed.
+    WARNING (CMI-2755): I21.M0: Vbd(=996.439 mV) has exceeded vbd_max(=990 mV).
+        Check and update the settings of the SOA-related model parameters and
+        terminal bias of the instance
+        Further occurrences of this warning will be suppressed.
+Warning from spectre at time = 3.05244 ns during transient analysis `tran'.
+    WARNING (CMI-2754): I21.M0: Vgd(=-990.124 mV) has exceeded vgd_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2754): I21.M1: Vgd(=-990.124 mV) has exceeded vgd_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Warning from spectre at time = 3.05575 ns during transient analysis `tran'.
+    WARNING (CMI-2754): I21.M0: Vgd(=-990.035 mV) has exceeded vgd_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2754): I21.M1: Vgd(=-990.035 mV) has exceeded vgd_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Warning from spectre at time = 3.0648 ns during transient analysis `tran'.
+    WARNING (CMI-2754): I21.M0: Vgd(=-990.032 mV) has exceeded vgd_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+        Further occurrences of this warning will be suppressed.
+Notice from spectre at time = 3.07468 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.09326 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.12696 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.1897 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.30683 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+    tran: time = 8.167 ns    (2.97 %), step = 2.058 ns     (748 m%)
+    tran: time = 20.81 ns    (7.57 %), step = 492.2 ps     (179 m%)
+    tran: time = 34.41 ns    (12.5 %), step = 56.08 ps    (20.4 m%)
+
+Warning from spectre at time = 43.4067 ns during transient analysis `tran'.
+    WARNING (CMI-2762): xdrv_n.I14.I1.R3.c_soa: Vc(= 171.318 mV) has exceeded
+        bv_max(= 171.29 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I5<2>.I1.R3.c_soa: Vc(= 171.318 mV) has exceeded
+        bv_max(= 171.29 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I4.I1.R3.c_soa: Vc(= 171.318 mV) has exceeded
+        bv_max(= 171.29 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I8.I1.R3.c_soa: Vc(= 171.318 mV) has exceeded
+        bv_max(= 171.29 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I16.I1.R3.c_soa: Vc(= 171.318 mV) has exceeded
+        bv_max(= 171.29 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+        Further occurrences of this warning will be suppressed.
+Warning from spectre at time = 46.1033 ns during transient analysis `tran'.
+    WARNING (CMI-2752): I82.I4.M3: Vgs(=992.411 mV) has exceeded vgs_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2753): I82.I4.M3: Vgb(=992.411 mV) has exceeded vgb_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Warning from spectre at time = 46.4087 ns during transient analysis `tran'.
+    WARNING (CMI-2752): I82.I0.M3: Vgs(=1.00157 V) has exceeded vgs_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2753): I82.I0.M3: Vgb(=1.00157 V) has exceeded vgb_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Warning from spectre at time = 46.4288 ns during transient analysis `tran'.
+    WARNING (CMI-2752): I82.I0.M3: Vgs(=1.00429 V) has exceeded vgs_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2753): I82.I0.M3: Vgb(=1.00429 V) has exceeded vgb_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Warning from spectre at time = 47.0953 ns during transient analysis `tran'.
+    WARNING (CMI-2752): I82.I5.M1: Vgs(=-992.636 mV) has exceeded vgs_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2753): I82.I5.M1: Vgb(=-992.636 mV) has exceeded vgb_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Warning from spectre at time = 47.2217 ns during transient analysis `tran'.
+    WARNING (CMI-2752): I82.I3.M3: Vgs(=993.899 mV) has exceeded vgs_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+        Further occurrences of this warning will be suppressed.
+    WARNING (CMI-2753): I82.I3.M3: Vgb(=993.899 mV) has exceeded vgb_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+        Further occurrences of this warning will be suppressed.
+
+    tran: time = 48.13 ns    (17.5 %), step = 18.89 ps    (6.87 m%)
+    tran: time = 61.89 ns    (22.5 %), step = 24.95 ps    (9.07 m%)
+    tran: time = 75.63 ns    (27.5 %), step = 23.93 ps     (8.7 m%)
+    tran: time = 89.4 ns     (32.5 %), step = 35.42 ps    (12.9 m%)
+    tran: time = 103.1 ns    (37.5 %), step = 34.25 ps    (12.5 m%)
+    tran: time = 116.9 ns    (42.5 %), step = 33.24 ps    (12.1 m%)
+    tran: time = 130.6 ns    (47.5 %), step = 20.94 ps    (7.62 m%)
+    tran: time = 144.4 ns    (52.5 %), step = 23.98 ps    (8.72 m%)
+    tran: time = 158.1 ns    (57.5 %), step = 18.55 ps    (6.75 m%)
+    tran: time = 171.9 ns    (62.5 %), step = 18.97 ps     (6.9 m%)
+    tran: time = 185.6 ns    (67.5 %), step = 24.13 ps    (8.78 m%)
+    tran: time = 199.4 ns    (72.5 %), step = 21.47 ps    (7.81 m%)
+    tran: time = 213.1 ns    (77.5 %), step = 17.06 ps     (6.2 m%)
+    tran: time = 226.9 ns    (82.5 %), step = 15.35 ps    (5.58 m%)
+    tran: time = 240.6 ns    (87.5 %), step = 18.42 ps     (6.7 m%)
+    tran: time = 254.4 ns    (92.5 %), step = 24.89 ps    (9.05 m%)
+    tran: time = 268.1 ns    (97.5 %), step = 23.14 ps    (8.41 m%)
+Number of accepted tran steps =             11588
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I82.I4.M1:int_g) = 1.08 V
+I: I(V22:p) = 5.144 mA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (29.8 %)      1 (15.5 %)      2 (100.0 %)     3 (28.3 %)
+         4 (30.7 %)      5 (33.9 %)      6 (9.7 %)       7 (32.2 %)
+         8 (31.9 %)      9 (34.2 %)     10 (25.4 %)     11 (38.9 %)
+        12 (28.4 %)     13 (16.1 %)     14 (30.5 %)     15 (31.3 %)
+        16 (2.2 %)      17 (1.5 %)      19 (16.5 %)     22 (22.2 %)
+        26 (1.3 %)      27 (2.2 %)      29 (3.5 %)      30 (1.5 %)
+        31 (2.5 %)      
+        Total: 575.3%
+Initial condition solution time: CPU = 454.694 ms, elapsed = 57.425 ms.
+Intrinsic tran analysis time:    CPU = 111.874 s, elapsed = 14.1729 s.
+Total time required for tran analysis `tran': CPU = 112.595 s (1m  52.6s),
+        elapsed = 14.2638 s.
+Time accumulated: CPU = 235.214 s (3m  55.2s), elapsed = 55.0581 s.
+Peak resident memory used = 588 Mbytes.
+
+
+Notice from spectre.
+    3 notices suppressed.
+    307092 warnings suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/finalTimeOP.info
+        ...
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/dcOp.dc
+        ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = -7.5 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+
+Notice from spectre during DC analysis `dcOp'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is
+        recommended for possible improvement of convergence.
+Warning from spectre during DC analysis `dcOp'.
+    WARNING (CMI-2762): xdrv_p.I4.I1.R3.c_soa: Vc(= -197.569 mV) has exceeded
+        bv_max(= 171.29 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I14.I1.R3.c_soa: Vc(= 199.586 mV) has exceeded
+        bv_max(= 171.29 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I4.I1.R3.c_soa: Vc(= 199.586 mV) has exceeded
+        bv_max(= 171.29 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_p.I16.I1.R3.c_soa: Vc(= -197.569 mV) has exceeded
+        bv_max(= 171.29 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I16.I1.R3.c_soa: Vc(= 199.586 mV) has exceeded
+        bv_max(= 171.29 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+        Further occurrences of this warning will be suppressed.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(xdrv_n.I0.I8.M4:int_g) = 990 mV
+I: I(V22:p) = 5.029 mA
+Convergence achieved in 39 iterations.
+DC simulation time: CPU = 1.01897 s, elapsed = 129.628 ms.
+Total time required for dc analysis `dcOp': CPU = 1.01971 s, elapsed = 129.723
+        ms.
+Time accumulated: CPU = 236.911 s (3m  56.9s), elapsed = 55.2727 s.
+Peak resident memory used = 588 Mbytes.
+
+
+Notice from spectre.
+    9 warnings suppressed.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/dcOpInfo.info
+        ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/modelParameter.info
+        ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/element.info
+        ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/outputParameter.info
+        ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/designParamVals.info
+        ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/primitives.info.primitives
+        ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/subckts.info.subckts
+        ...
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+"/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/test_suite_35_6jobs/ocean_results_job1"
+> stdobj@0x2ac616f8
+> 50.70806
+> -50.83097
+> t
+> t
+> Result GOOD_02 -> pup=50.708065, pdn=-50.830969 (Target: pup=49.68, pdn=49.73)
+t
+> > > 
+>>> [JOB 1: TT] Running Sim 3/5: GOOD_03 (TT, tt_res_bip_dio_disres) V=0.87V, T=26.0C <<<
+t
+> "26.0"
+> "0.87"
+> "26.0"
+> "1"
+> "1"
+> "1"
+> "1"
+> "1"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "1"
+> "1"
+> "1"
+> "1"
+> "1"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> Delete psf data in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/test_suite_35_6jobs/ocean_results_job1/psf.
+Begin Incremental Netlisting Sep 16 00:00:02 2026
+End netlisting Sep 16 00:00:02 2026
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+simulate...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+        Further occurrences of this warning will be suppressed.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 275 ns)
+*************************************************
+DC simulation time: CPU = 450.159 ms, elapsed = 56.8318 ms.
+
+Opening the PSFXL file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/tran.tran.tran
+        ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 275 ns
+    step = 275 ps
+    maxstep = 5.5 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 26 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+
+
+Output and IC/nodeset summary:
+                 save   33      (current)
+                 save   2640    (voltage)
+
+
+Notice from spectre at time = 3.07282 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.08934 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.11962 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.17534 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.27907 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+    tran: time = 7.659 ns    (2.78 %), step = 1.92 ns      (698 m%)
+    tran: time = 21.21 ns    (7.71 %), step = 679 ps       (247 m%)
+    tran: time = 34.41 ns    (12.5 %), step = 131.4 ps    (47.8 m%)
+    tran: time = 48.17 ns    (17.5 %), step = 50.13 ps    (18.2 m%)
+    tran: time = 61.89 ns    (22.5 %), step = 30.75 ps    (11.2 m%)
+    tran: time = 75.64 ns    (27.5 %), step = 35.79 ps      (13 m%)
+    tran: time = 89.38 ns    (32.5 %), step = 20.89 ps     (7.6 m%)
+    tran: time = 103.1 ns    (37.5 %), step = 39.64 ps    (14.4 m%)
+    tran: time = 116.9 ns    (42.5 %), step = 41.18 ps      (15 m%)
+    tran: time = 130.6 ns    (47.5 %), step = 32.95 ps      (12 m%)
+    tran: time = 144.4 ns    (52.5 %), step = 31.22 ps    (11.4 m%)
+    tran: time = 158.1 ns    (57.5 %), step = 21.9 ps     (7.96 m%)
+    tran: time = 171.9 ns    (62.5 %), step = 28.66 ps    (10.4 m%)
+    tran: time = 185.7 ns    (67.5 %), step = 27.42 ps    (9.97 m%)
+    tran: time = 199.4 ns    (72.5 %), step = 21.68 ps    (7.88 m%)
+    tran: time = 213.1 ns    (77.5 %), step = 38.58 ps      (14 m%)
+    tran: time = 226.9 ns    (82.5 %), step = 26.83 ps    (9.76 m%)
+    tran: time = 240.7 ns    (87.5 %), step = 31.75 ps    (11.5 m%)
+    tran: time = 254.4 ns    (92.5 %), step = 21.19 ps    (7.71 m%)
+    tran: time = 268.1 ns    (97.5 %), step = 24.95 ps    (9.07 m%)
+Number of accepted tran steps =             8374
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I82.I6.M1:int_g) = 951.1 mV
+I: I(V22:p) = 4.577 mA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (41.0 %)      1 (22.8 %)      2 (100.0 %)     3 (27.5 %)
+         4 (28.9 %)      5 (47.0 %)      6 (9.3 %)       7 (41.6 %)
+         8 (40.8 %)      9 (45.3 %)     10 (35.3 %)     11 (40.1 %)
+        12 (40.1 %)     13 (20.5 %)     14 (28.8 %)     15 (31.3 %)
+        16 (1.7 %)      17 (1.9 %)      19 (13.8 %)     20 (1.4 %)
+        22 (31.1 %)     25 (1.2 %)      26 (1.1 %)      27 (1.9 %)
+        29 (4.1 %)      30 (1.3 %)      31 (2.1 %)      
+        Total: 665.0%
+Initial condition solution time: CPU = 450.815 ms, elapsed = 56.922 ms.
+Intrinsic tran analysis time:    CPU = 80.3549 s, elapsed = 10.1059 s.
+Total time required for tran analysis `tran': CPU = 81.0686 s (1m  21.1s),
+        elapsed = 10.1958 s.
+Time accumulated: CPU = 365.945 s (6m  5.9s), elapsed = 71.7494 s (1m  11.7s).
+Peak resident memory used = 591 Mbytes.
+
+
+Notice from spectre.
+    3 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/finalTimeOP.info
+        ...
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/dcOp.dc
+        ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 26 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+
+Notice from spectre during DC analysis `dcOp'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is
+        recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(pd) = 870 mV
+I: I(V22:p) = 4.487 mA
+Convergence achieved in 29 iterations.
+DC simulation time: CPU = 972.406 ms, elapsed = 123.451 ms.
+Total time required for dc analysis `dcOp': CPU = 973.307 ms, elapsed = 123.575
+        ms.
+Time accumulated: CPU = 367.605 s (6m  7.6s), elapsed = 71.959 s (1m  12.0s).
+Peak resident memory used = 591 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/dcOpInfo.info
+        ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/modelParameter.info
+        ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/element.info
+        ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/outputParameter.info
+        ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/designParamVals.info
+        ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/primitives.info.primitives
+        ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/subckts.info.subckts
+        ...
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+"/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/test_suite_35_6jobs/ocean_results_job1"
+> stdobj@0x2ac618d8
+> 51.49392
+> -51.34722
+> t
+> t
+> Result GOOD_03 -> pup=51.493921, pdn=-51.347216 (Target: pup=50.51, pdn=50.26)
+t
+> > > 
+>>> [JOB 1: TT] Running Sim 4/5: GOOD_04 (TT, tt_res_bip_dio_disres) V=0.87V, T=59.5C <<<
+t
+> "59.5"
+> "0.87"
+> "59.5"
+> "0"
+> "0"
+> "1"
+> "1"
+> "1"
+> "1"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "1"
+> "1"
+> "1"
+> "1"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> Delete psf data in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/test_suite_35_6jobs/ocean_results_job1/psf.
+Begin Incremental Netlisting Sep 16 00:00:18 2026
+End netlisting Sep 16 00:00:18 2026
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+simulate...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+        Further occurrences of this warning will be suppressed.
+Notice from spectre.
+    3 warnings suppressed.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 275 ns)
+*************************************************
+DC simulation time: CPU = 452.77 ms, elapsed = 57.1799 ms.
+
+Opening the PSFXL file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/tran.tran.tran
+        ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 275 ns
+    step = 275 ps
+    maxstep = 5.5 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 59.5 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+
+
+Output and IC/nodeset summary:
+                 save   33      (current)
+                 save   2640    (voltage)
+
+
+Notice from spectre at time = 3.07293 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.08894 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.11795 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.17055 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.26703 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+    tran: time = 7.333 ns    (2.67 %), step = 1.878 ns     (683 m%)
+    tran: time = 21.27 ns    (7.73 %), step = 994.9 ps     (362 m%)
+    tran: time = 34.41 ns    (12.5 %), step = 78.53 ps    (28.6 m%)
+    tran: time = 48.14 ns    (17.5 %), step = 28.58 ps    (10.4 m%)
+    tran: time = 61.89 ns    (22.5 %), step = 25.8 ps     (9.38 m%)
+    tran: time = 75.68 ns    (27.5 %), step = 70.87 ps    (25.8 m%)
+    tran: time = 89.39 ns    (32.5 %), step = 33.27 ps    (12.1 m%)
+    tran: time = 103.1 ns    (37.5 %), step = 25.18 ps    (9.16 m%)
+    tran: time = 116.9 ns    (42.5 %), step = 22.65 ps    (8.24 m%)
+    tran: time = 130.7 ns    (47.5 %), step = 42.82 ps    (15.6 m%)
+    tran: time = 144.4 ns    (52.5 %), step = 36.12 ps    (13.1 m%)
+    tran: time = 158.2 ns    (57.5 %), step = 32.33 ps    (11.8 m%)
+    tran: time = 171.9 ns    (62.5 %), step = 22.24 ps    (8.09 m%)
+    tran: time = 185.6 ns    (67.5 %), step = 31.65 ps    (11.5 m%)
+    tran: time = 199.4 ns    (72.5 %), step = 25.7 ps     (9.34 m%)
+    tran: time = 213.1 ns    (77.5 %), step = 33.27 ps    (12.1 m%)
+    tran: time = 226.9 ns    (82.5 %), step = 22.01 ps       (8 m%)
+    tran: time = 240.6 ns    (87.5 %), step = 30.62 ps    (11.1 m%)
+    tran: time = 254.4 ns    (92.5 %), step = 36.22 ps    (13.2 m%)
+    tran: time = 268.1 ns    (97.5 %), step = 32.67 ps    (11.9 m%)
+Number of accepted tran steps =             7967
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I82.I0.M3:int_g) = 945.4 mV
+I: I(V22:p) = 4.885 mA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (48.4 %)      1 (26.4 %)      2 (89.0 %)      3 (26.7 %)
+         4 (29.4 %)      5 (43.6 %)      6 (24.7 %)      7 (46.7 %)
+         8 (49.1 %)      9 (42.8 %)     10 (40.2 %)     11 (45.6 %)
+        12 (36.9 %)     13 (21.2 %)     14 (32.7 %)     15 (39.9 %)
+        16 (1.6 %)      17 (1.6 %)      18 (4.4 %)      19 (27.0 %)
+        20 (10.4 %)     21 (1.9 %)      22 (25.1 %)     23 (4.4 %)
+        24 (1.2 %)      25 (4.0 %)      26 (2.4 %)      27 (1.6 %)
+        28 (9.8 %)      29 (10.6 %)     30 (1.7 %)      31 (2.0 %)
+        Total: 752.9%
+Initial condition solution time: CPU = 453.477 ms, elapsed = 57.2782 ms.
+Intrinsic tran analysis time:    CPU = 79.4866 s, elapsed = 9.93693 s.
+Total time required for tran analysis `tran': CPU = 80.2238 s (1m  20.2s),
+        elapsed = 10.0298 s.
+Time accumulated: CPU = 506.906 s (8m  26.9s), elapsed = 89.5361 s (1m 
+        29.5s).
+Peak resident memory used = 591 Mbytes.
+
+
+Notice from spectre.
+    3 notices suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/finalTimeOP.info
+        ...
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/dcOp.dc
+        ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 59.5 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+
+Notice from spectre during DC analysis `dcOp'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is
+        recommended for possible improvement of convergence.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(pd) = 870 mV
+I: I(V22:p) = 4.811 mA
+Convergence achieved in 48 iterations.
+DC simulation time: CPU = 1.13452 s, elapsed = 144.188 ms.
+Total time required for dc analysis `dcOp': CPU = 1.13542 s, elapsed = 144.307
+        ms.
+Time accumulated: CPU = 521.072 s (8m  41.1s), elapsed = 91.5342 s (1m 
+        31.5s).
+Peak resident memory used = 591 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/dcOpInfo.info
+        ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/modelParameter.info
+        ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/element.info
+        ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/outputParameter.info
+        ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/designParamVals.info
+        ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/primitives.info.primitives
+        ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/subckts.info.subckts
+        ...
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+"/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/test_suite_35_6jobs/ocean_results_job1"
+> stdobj@0x2ac61ab8
+> 51.13648
+> -51.0711
+> t
+> t
+> Result GOOD_04 -> pup=51.136482, pdn=-51.071101 (Target: pup=50.21, pdn=49.92)
+t
+> > > 
+>>> [JOB 1: TT] Running Sim 5/5: GOOD_05 (TT, tt_res_bip_dio_disres) V=0.99V, T=125.0C <<<
+t
+> "125.0"
+> "0.99"
+> "125.0"
+> "1"
+> "0"
+> "1"
+> "1"
+> "1"
+> "1"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "1"
+> "1"
+> "1"
+> "1"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> "0"
+> Delete psf data in /data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/test_suite_35_6jobs/ocean_results_job1/psf.
+Begin Incremental Netlisting Sep 16 00:00:39 2026
+End netlisting Sep 16 00:00:39 2026
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+simulate...
+
+Warning from spectre.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'
+        option will no longer be supported in future releases. Use 'spectre -h'
+        to see other recommended values for the 'checklimitdest' option.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 275 ns)
+*************************************************
+DC simulation time: CPU = 437.865 ms, elapsed = 55.275 ms.
+
+Opening the PSFXL file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/tran.tran.tran
+        ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 275 ns
+    step = 275 ps
+    maxstep = 5.5 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 125 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+
+
+Output and IC/nodeset summary:
+                 save   33      (current)
+                 save   2640    (voltage)
+
+
+Warning from spectre at time = 3.00042 ns during transient analysis `tran'.
+    WARNING (CMI-2751): I21.M0: Vds(=-992.196 mV) has exceeded vds_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2755): I21.M0: Vbd(=992.196 mV) has exceeded vbd_max(=990 mV).
+        Check and update the settings of the SOA-related model parameters and
+        terminal bias of the instance
+Warning from spectre at time = 3.00125 ns during transient analysis `tran'.
+    WARNING (CMI-2751): I21.M0: Vds(=-995.634 mV) has exceeded vds_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2755): I21.M0: Vbd(=995.634 mV) has exceeded vbd_max(=990 mV).
+        Check and update the settings of the SOA-related model parameters and
+        terminal bias of the instance
+Warning from spectre at time = 3.00292 ns during transient analysis `tran'.
+    WARNING (CMI-2751): I21.M0: Vds(=-997.103 mV) has exceeded vds_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2755): I21.M0: Vbd(=997.103 mV) has exceeded vbd_max(=990 mV).
+        Check and update the settings of the SOA-related model parameters and
+        terminal bias of the instance
+Warning from spectre at time = 3.00449 ns during transient analysis `tran'.
+    WARNING (CMI-2751): I21.M0: Vds(=-996.945 mV) has exceeded vds_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2755): I21.M0: Vbd(=996.945 mV) has exceeded vbd_max(=990 mV).
+        Check and update the settings of the SOA-related model parameters and
+        terminal bias of the instance
+Warning from spectre at time = 3.00663 ns during transient analysis `tran'.
+    WARNING (CMI-2751): I21.M0: Vds(=-997.147 mV) has exceeded vds_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+        Further occurrences of this warning will be suppressed.
+    WARNING (CMI-2755): I21.M0: Vbd(=997.147 mV) has exceeded vbd_max(=990 mV).
+        Check and update the settings of the SOA-related model parameters and
+        terminal bias of the instance
+        Further occurrences of this warning will be suppressed.
+Warning from spectre at time = 3.05499 ns during transient analysis `tran'.
+    WARNING (CMI-2754): I21.M0: Vgd(=-990.007 mV) has exceeded vgd_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2754): I21.M1: Vgd(=-990.007 mV) has exceeded vgd_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Notice from spectre at time = 3.09061 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M0:int_g.
+Notice from spectre at time = 3.12796 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M1:int_g.
+Notice from spectre at time = 3.20266 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M1:int_g.
+Notice from spectre at time = 3.35205 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M1:int_g.
+Notice from spectre at time = 3.65084 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node I21.M1:int_g.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+    tran: time = 6.958 ns    (2.53 %), step = 248.3 ps    (90.3 m%)
+    tran: time = 21.11 ns    (7.68 %), step = 573.4 ps     (209 m%)
+    tran: time = 34.41 ns    (12.5 %), step = 58.6 ps     (21.3 m%)
+
+Warning from spectre at time = 45.6554 ns during transient analysis `tran'.
+    WARNING (CMI-2762): xdrv_n.I14.I1.R3.c_soa: Vc(= 177.158 mV) has exceeded
+        bv_max(= 177.128 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I4.I1.R3.c_soa: Vc(= 177.158 mV) has exceeded
+        bv_max(= 177.128 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I5<2>.I1.R3.c_soa: Vc(= 177.158 mV) has exceeded
+        bv_max(= 177.128 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I16.I1.R3.c_soa: Vc(= 177.158 mV) has exceeded
+        bv_max(= 177.128 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I8.I1.R3.c_soa: Vc(= 177.158 mV) has exceeded
+        bv_max(= 177.128 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+        Further occurrences of this warning will be suppressed.
+Warning from spectre at time = 46.8943 ns during transient analysis `tran'.
+    WARNING (CMI-2752): I82.I4.M3: Vgs(=992.938 mV) has exceeded vgs_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2753): I82.I4.M3: Vgb(=992.938 mV) has exceeded vgb_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Warning from spectre at time = 47.2466 ns during transient analysis `tran'.
+    WARNING (CMI-2752): I82.I0.M3: Vgs(=999.871 mV) has exceeded vgs_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2753): I82.I0.M3: Vgb(=999.871 mV) has exceeded vgb_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2754): I82.I0.M3: Vgd(=995.662 mV) has exceeded vgd_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2754): I82.I0.M1: Vgd(=995.662 mV) has exceeded vgd_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Warning from spectre at time = 47.5791 ns during transient analysis `tran'.
+    WARNING (CMI-2752): I81.I3.M3: Vgs(=990.322 mV) has exceeded vgs_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2753): I81.I3.M3: Vgb(=990.322 mV) has exceeded vgb_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Warning from spectre at time = 47.9442 ns during transient analysis `tran'.
+    WARNING (CMI-2752): I82.I5.M1: Vgs(=-990.304 mV) has exceeded vgs_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+    WARNING (CMI-2753): I82.I5.M1: Vgb(=-990.304 mV) has exceeded vgb_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+Warning from spectre at time = 47.9755 ns during transient analysis `tran'.
+    WARNING (CMI-2752): I81.I6.M3: Vgs(=994.847 mV) has exceeded vgs_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+        Further occurrences of this warning will be suppressed.
+    WARNING (CMI-2753): I81.I6.M3: Vgb(=994.847 mV) has exceeded vgb_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+        Further occurrences of this warning will be suppressed.
+    WARNING (CMI-2754): I81.I6.M3: Vgd(=990.805 mV) has exceeded vgd_max(=990
+        mV). Check and update the settings of the SOA-related model parameters
+        and terminal bias of the instance
+        Further occurrences of this warning will be suppressed.
+
+    tran: time = 48.14 ns    (17.5 %), step = 22.16 ps    (8.06 m%)
+    tran: time = 61.9 ns     (22.5 %), step = 26.88 ps    (9.77 m%)
+    tran: time = 75.63 ns    (27.5 %), step = 29.61 ps    (10.8 m%)
+    tran: time = 89.38 ns    (32.5 %), step = 25.88 ps    (9.41 m%)
+    tran: time = 103.1 ns    (37.5 %), step = 26.79 ps    (9.74 m%)
+    tran: time = 116.9 ns    (42.5 %), step = 22.77 ps    (8.28 m%)
+    tran: time = 130.6 ns    (47.5 %), step = 31.88 ps    (11.6 m%)
+    tran: time = 144.4 ns    (52.5 %), step = 23.32 ps    (8.48 m%)
+    tran: time = 158.1 ns    (57.5 %), step = 21.59 ps    (7.85 m%)
+    tran: time = 171.9 ns    (62.5 %), step = 23.34 ps    (8.49 m%)
+    tran: time = 185.6 ns    (67.5 %), step = 25.12 ps    (9.14 m%)
+    tran: time = 199.4 ns    (72.5 %), step = 27.38 ps    (9.96 m%)
+    tran: time = 213.1 ns    (77.5 %), step = 31.67 ps    (11.5 m%)
+    tran: time = 226.9 ns    (82.5 %), step = 29.73 ps    (10.8 m%)
+    tran: time = 240.6 ns    (87.5 %), step = 29.3 ps     (10.7 m%)
+    tran: time = 254.4 ns    (92.5 %), step = 27.7 ps     (10.1 m%)
+    tran: time = 268.1 ns    (97.5 %), step = 25.72 ps    (9.35 m%)
+Number of accepted tran steps =             9126
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(I82.stg7) = 1.059 V
+I: I(V0:p) = 8.039 mA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (57.8 %)      1 (27.3 %)      2 (77.9 %)      3 (28.8 %)
+         4 (38.7 %)      5 (43.7 %)      6 (31.8 %)      7 (52.6 %)
+         8 (52.0 %)      9 (48.1 %)     10 (35.3 %)     11 (44.9 %)
+        12 (31.4 %)     13 (24.9 %)     14 (41.6 %)     15 (37.5 %)
+        16 (1.3 %)      17 (1.4 %)      18 (3.7 %)      19 (22.1 %)
+        20 (8.6 %)      21 (1.6 %)      22 (21.1 %)     23 (3.7 %)
+        24 (1.6 %)      25 (3.3 %)      26 (2.0 %)      27 (1.4 %)
+        28 (19.4 %)     29 (8.7 %)      30 (1.4 %)      31 (1.8 %)
+        Total: 777.3%
+Initial condition solution time: CPU = 438.52 ms, elapsed = 55.3632 ms.
+Intrinsic tran analysis time:    CPU = 93.0241 s, elapsed = 11.6792 s.
+Total time required for tran analysis `tran': CPU = 93.7384 s (1m  33.7s),
+        elapsed = 11.7692 s.
+Time accumulated: CPU = 661.383 s (11m  1.4s), elapsed = 109.489 s (1m 
+        49.5s).
+Peak resident memory used = 591 Mbytes.
+
+
+Notice from spectre.
+    1 notice suppressed.
+    249938 warnings suppressed.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/finalTimeOP.info
+        ...
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/dcOp.dc
+        ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 125 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    rabsshort = 1 mOhm
+
+Notice from spectre during DC analysis `dcOp'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is
+        recommended for possible improvement of convergence.
+Warning from spectre during DC analysis `dcOp'.
+    WARNING (CMI-2762): xdrv_p.I4.I1.R3.c_soa: Vc(= -190.916 mV) has exceeded
+        bv_max(= 177.128 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I14.I1.R3.c_soa: Vc(= 195.288 mV) has exceeded
+        bv_max(= 177.128 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I4.I1.R3.c_soa: Vc(= 195.288 mV) has exceeded
+        bv_max(= 177.128 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_p.I5<2>.I1.R3.c_soa: Vc(= -190.916 mV) has
+        exceeded bv_max(= 177.128 mV). Check and update the settings of the
+        SOA-related model parameters and terminal bias of the instance.
+    WARNING (CMI-2762): xdrv_n.I5<2>.I1.R3.c_soa: Vc(= 195.288 mV) has exceeded
+        bv_max(= 177.128 mV). Check and update the settings of the SOA-related
+        model parameters and terminal bias of the instance.
+        Further occurrences of this warning will be suppressed.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(pd) = 990 mV
+I: I(V22:p) = 7.93 mA
+Convergence achieved in 19 iterations.
+DC simulation time: CPU = 789.133 ms, elapsed = 100.184 ms.
+Total time required for dc analysis `dcOp': CPU = 789.852 ms, elapsed = 100.28
+        ms.
+Time accumulated: CPU = 662.845 s (11m  2.8s), elapsed = 109.673 s (1m 
+        49.7s).
+Peak resident memory used = 591 Mbytes.
+
+
+Notice from spectre.
+    11 warnings suppressed.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/dcOpInfo.info
+        ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/modelParameter.info
+        ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/element.info
+        ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/outputParameter.info
+        ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/designParamVals.info
+        ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/primitives.info.primitives
+        ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file
+        ../../../../../validation/test_suite_35_6jobs/ocean_results_job1/psf/subckts.info.subckts
+        ...
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+"/data/proj/Low_power_design/tech_tsmc128nm/work/users/user13/validation/test_suite_35_6jobs/ocean_results_job1"
+> stdobj@0x2ac61c98
+> 51.76087
+> -50.73115
+> t
+> t
+> Result GOOD_05 -> pup=51.760868, pdn=-50.731147 (Target: pup=49.92, pdn=50.36)
+t
+> > t
+> 
+=== JOB 1 (TT) COMPLETED! Results saved to results_job1_TT.csv ===
+t
+> > 
